@@ -1,0 +1,20 @@
+body {
+    max-width: 720px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+#mainLeft {
+    float: left;
+    background-color: lightgrey;
+    width: 50%;
+}
+
+#mainRight {
+    float: right;
+    background-color: lightgrey;
+    width: 50%;
+}

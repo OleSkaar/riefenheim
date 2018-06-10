@@ -1,0 +1,48 @@
+[
+  [
+    {
+      "watch": "Dawn",
+      "location": "Grasslands",
+      "day": 1,
+      "month": 6,
+      "year": 1352,
+      "precipitation": "0",
+      "wind": "1",
+      "temperature": "3",
+      "sun": {
+        "watches": [
+          true,
+          true,
+          true,
+          true
+        ],
+        "totalHours": 17,
+        "remainingHours": 13
+      },
+      "moon": "New",
+      "encounter": "none"
+    },
+    {
+      "watch": "Midday",
+      "location": "Grasslands",
+      "day": 1,
+      "month": 6,
+      "year": 1352,
+      "precipitation": "0",
+      "wind": "1",
+      "temperature": "3",
+      "sun": {
+        "watches": [
+          true,
+          true,
+          true,
+          true
+        ],
+        "totalHours": 17,
+        "remainingHours": 9
+      },
+      "moon": "New  ",
+      "encounter": "none"
+    }
+  ]
+]
