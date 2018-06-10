@@ -1,4 +1,4 @@
-# riefenheim
+# Riefenheim 0.1
 A tabletop RPG-app that creates rich detail for overland travel
 
 Overland travel is often glossed over in tabletop RPGs, D&D in particular, because it lacks the structure and detail found in dungeons. 
@@ -17,7 +17,7 @@ It generates the following data:
 Features on the way:
 - An actual user interface
 - Showing 24 hours of weather instead of 8
-
+- Weather lore
 
 Potential features:
 - Dynamic encounter tables based on tribal strength
