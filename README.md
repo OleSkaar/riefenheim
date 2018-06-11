@@ -26,7 +26,7 @@ Potential features:
 
 The app currently requires an initial data file to function, which is not included here for testing purposes.
 
-To start the app, create a file named data.json and paste the following:
+To start the app, create a file named data.json in the /public/ directory and paste the following:
 
 [
   [
