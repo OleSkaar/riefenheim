@@ -6,15 +6,19 @@ body {
 }
 
 
-
-#mainLeft {
+.results {
+    background-color: lightgrey;
+    width: 16.6%;
+    float: left;
+}
+#1 {
     float: left;
     background-color: lightgrey;
-    width: 50%;
+    width: 16.6%;
 }
 
-#mainRight {
+#2 {
     float: right;
     background-color: lightgrey;
-    width: 50%;
+    width: 16.6%;
 }

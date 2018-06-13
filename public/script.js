@@ -626,11 +626,23 @@ var locations = {
         getLatestWatches: function(array) {
         
             if (array !== null) {
-                array.reverse();
-                current = array[0].watch
-                return array[0]
+                var result = []
+                for (var i = 0; i < 6; i++) {
+                    result.push(array[i])
+                }
+                return result
             }
             
+        },
+        
+        updateArray: function(array, newWatches) {
+            var watchList = array;
+            for (var i = 0; i < newWatches.length; i++) {
+                watchList.shift();
+                watchList.push(newWatches[i])
+            }
+            
+            return watchList
         },
         
         getJSON: function(dataURL, callback) {
@@ -670,8 +682,12 @@ var locations = {
 var UIController = (function() {
     
     var DOMstrings = {
-        left: 'mainLeft',
-        right: 'mainRight',
+        1: '1',
+        2: '3',
+        3: '3',
+        4: '4',
+        5: '5',
+        6: '6',
         locationButtons: 'locations',
     }
     
@@ -720,16 +736,29 @@ var UIController = (function() {
                 var arr = Object.values(arr)
                 arr.forEach(function(element, index) {
                     var p = document.createElement('p')
-                    p.innerHTML = keys[index] + ': ' + element;
-                    section.appendChild(p)
+                    
+                    if (typeof element === 'object') {
+                        var objIndex = keys[index]
+                        var vals = Object.values(element);
+                        vals.forEach(function(element, index) {
+                            p.innerHTML = objIndex + ': ' + element;
+                            section.appendChild(p)          
+                            })
+                    } else {
+                        p.innerHTML = keys[index] + ': ' + element;
+                        section.appendChild(p) 
+                    }
 
                     })    
             }
-            printMain(array[0], DOMstrings.left)
-            printMain(array[1], DOMstrings.right)
             
+            printMain(array[0], 1)
+            printMain(array[1], 2)
+            printMain(array[2], 3)
+            printMain(array[3], 4)            
+            printMain(array[4], 5)
+            printMain(array[5], 6)            
  
-            
             
         }
     }
@@ -747,20 +776,26 @@ var controller = (function(logicCtrl, dataCtrl, UICtrl) {
         btn.addEventListener('click', (function() {
                 return function() {
                     
-                // 1. Get data for next two watches based on latest watch
-                    var newWatches = dataCtrl.newWatches(watches[1]);
+                // 1. Get data for next two watches based on latest watch   
+                    var newWatches = dataCtrl.newWatches(watches[watches.length -1]);
                     
                 // 2. Send to server
-                    dataCtrl.postToServer(newWatches);
+                    newWatches.forEach(function(element) {
+                        dataCtrl.postToServer(element);
+                    })
+                
+                // 3. Update watch list 
+                    var newList = dataCtrl.updateArray(watches, newWatches)
+                    console.log(newList)
                     
-                // 3. Update UI    
-                    UICtrl.updateUI(newWatches);
+                // 4. Update UI    
+                    UICtrl.updateUI(newList);    
                     
-                //4. Update event listener
+                // 5. Update event listener
                     var btn = document.getElementById('nextWatch');
                     var newBtn = btn.cloneNode(true)
                     btn.parentNode.replaceChild(newBtn, btn)    
-                    setupEventListeners(newWatches)
+                    setupEventListeners(newList)
                 }
             })())};
 
