@@ -134,7 +134,7 @@ var logicController = (function() {
                     }        
                      
             }      
-            console.log(result)  
+              
             return result      
         },
         
@@ -203,14 +203,14 @@ var logicController = (function() {
                 for (i = 0; i < array.length; i++) {
 
                     if (array[i] > roll) {
-                        console.log('Element = ' + array[i])
+                        
                         result = i
                         break
                     }
                 }
                 return result 
             }                
-
+        
               // 1. Get monthly volatility  
                 switch (month.volatility) {
                     case 'low':
@@ -268,18 +268,16 @@ var logicController = (function() {
             arrayAdded = addArray(newArray)
 
             // 5. Roll 1-100 to find next weather state
-            //console.log(arrayAdded);
             nextWeather = weatherRoll(arrayAdded)
-            //console.log(nextWeather)
+
                 return nextWeather
             }        
         
-        monthData = dataController.getMonths()[watch.month]
+        monthData = dataController.getMonths()[watch.month -1]
         locationData = dataController.getLocations()[watch.location]
         
         result = assignProbs(weatherIndex, monthData, locationData, precipOrWind);
         
-        console.log(result)
         return result
             
         },
@@ -602,7 +600,7 @@ var locations = {
                 
                 newWatch.precipitation = logicController.weather(current, current.precipitation, 'Precipitation')
                 newWatch.wind = logicController.weather(current, current.wind, 'Wind')
-                newWatch.temperature = dataController.getMonths()[current.month].temperature
+                newWatch.temperature = dataController.getMonths()[current.month -1].temperature
                 
                 return newWatch
             }
@@ -626,10 +624,14 @@ var locations = {
         getLatestWatches: function(array) {
         
             if (array !== null) {
+                array.reverse();
+                console.log(array)
                 var result = []
-                for (var i = 0; i < 6; i++) {
+                for (var i = 5; i > -1; i--) {
                     result.push(array[i])
                 }
+                console.log(result)
+                //result.reverse();
                 return result
             }
             
@@ -786,7 +788,6 @@ var controller = (function(logicCtrl, dataCtrl, UICtrl) {
                 
                 // 3. Update watch list 
                     var newList = dataCtrl.updateArray(watches, newWatches)
-                    console.log(newList)
                     
                 // 4. Update UI    
                     UICtrl.updateUI(newList);    
