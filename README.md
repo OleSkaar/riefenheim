@@ -29,51 +29,157 @@ The app currently requires an initial data file to function, which is not includ
 To start the app, create a file named data.json in the /public/ directory and paste the following:
 
 [
-  [
-    {
-      "watch": "Dawn",
-      "location": "Grasslands",
-      "day": 1,
-      "month": 6,
-      "year": 1352,
-      "precipitation": "0",
-      "wind": "1",
-      "temperature": "3",
-      "sun": {
-        "watches": [
-          true,
-          true,
-          true,
-          true
-        ],
-        "totalHours": 17,
-        "remainingHours": 13
-      },
-      "moon": "New",
-      "encounter": "none"
+{
+    "watch": "Dawn",
+    "location": "Grasslands",
+    "day": 2,
+    "month": 6,
+    "year": 1352,
+    "precipitation": 1,
+    "wind": 2,
+    "temperature": 3,
+    "sun": {
+      "totalHours": 16.933333333333334,
+      "remainingHours": 13,
+      "watches": [
+        true,
+        true,
+        true,
+        true
+      ]
     },
-    {
-      "watch": "Midday",
-      "location": "Grasslands",
-      "day": 1,
-      "month": 6,
-      "year": 1352,
-      "precipitation": "0",
-      "wind": "1",
-      "temperature": "3",
-      "sun": {
-        "watches": [
-          true,
-          true,
-          true,
-          true
-        ],
-        "totalHours": 17,
-        "remainingHours": 9
-      },
-      "moon": "New  ",
-      "encounter": "none"
+    "moon": "New",
+    "encounter": {
+      "text": "Nothing"
     }
-  ]
-]
-
+  },
+  {
+    "watch": "Midday",
+    "location": "Grasslands",
+    "day": 2,
+    "month": 6,
+    "year": 1352,
+    "precipitation": 1,
+    "wind": 2,
+    "temperature": 3,
+    "sun": {
+      "totalHours": 16.933333333333334,
+      "remainingHours": 9,
+      "watches": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    "moon": "New",
+    "encounter": {
+      "time": 3,
+      "creature": "2d8 wolves",
+      "type": "Spoor",
+      "text": "Wolves howling"
+    }
+  },
+  {
+    "watch": "Evening",
+    "location": "Grasslands",
+    "day": 2,
+    "month": 6,
+    "year": 1352,
+    "precipitation": 1,
+    "wind": 2,
+    "temperature": 3,
+    "sun": {
+      "totalHours": 16.933333333333334,
+      "remainingHours": 5,
+      "watches": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    "moon": "New",
+    "encounter": {
+      "time": 2,
+      "creature": "Giant eagle",
+      "type": "Encounter",
+      "text": "Just passing by. Does not care.",
+      "distance": "300 feet",
+      "direction": "South",
+      "heading": "North"
+    }
+  },
+  {
+    "watch": "Dusk",
+    "location": "Grasslands",
+    "day": 2,
+    "month": 6,
+    "year": 1352,
+    "precipitation": 1,
+    "wind": 3,
+    "temperature": 3,
+    "sun": {
+      "totalHours": 16.933333333333334,
+      "remainingHours": 1,
+      "watches": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    "moon": "New",
+    "encounter": {
+      "text": "Nothing"
+    }
+  },
+  {
+    "watch": "First night",
+    "location": "Grasslands",
+    "day": 2,
+    "month": 6,
+    "year": 1352,
+    "precipitation": 1,
+    "wind": 3,
+    "temperature": 3,
+    "sun": {
+      "totalHours": 16.933333333333334,
+      "remainingHours": 0,
+      "watches": [
+        true,
+        false,
+        false,
+        false
+      ]
+    },
+    "moon": "New",
+    "encounter": {
+      "text": "Nothing"
+    }
+  },
+  {
+    "watch": "Second night",
+    "location": "Grasslands",
+    "day": 2,
+    "month": 6,
+    "year": 1352,
+    "precipitation": 1,
+    "wind": 3,
+    "temperature": 3,
+    "sun": {
+      "totalHours": 16.933333333333334,
+      "remainingHours": 0,
+      "watches": [
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    "moon": "New",
+    "encounter": {
+      "text": "Nothing"
+    }
+  }
+ ]
