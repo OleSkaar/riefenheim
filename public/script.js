@@ -625,13 +625,10 @@ var locations = {
         
             if (array !== null) {
                 array.reverse();
-                console.log(array)
                 var result = []
                 for (var i = 5; i > -1; i--) {
                     result.push(array[i])
                 }
-                console.log(result)
-                //result.reverse();
                 return result
             }
             
