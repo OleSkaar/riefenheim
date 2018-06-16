@@ -784,7 +784,7 @@ var controller = (function(logicCtrl, dataCtrl, UICtrl) {
                     })
                 
                 // 3. Update watch list 
-                    var newList = dataCtrl.updateArray(watches, newWatches)
+                    var newList = dataCtrl.updateArray(watches, newWatches)        
                     
                 // 4. Update UI    
                     UICtrl.updateUI(newList);    
