@@ -739,9 +739,11 @@ var UIController = (function() {
                     if (typeof element === 'object') {
                         var objIndex = keys[index]
                         var vals = Object.values(element);
+                        
                         vals.forEach(function(element, index) {
-                            p.innerHTML = objIndex + ': ' + element;
-                            section.appendChild(p)          
+                            var para = document.createElement('p')
+                            para.innerHTML = objIndex + ': ' + element;
+                            section.appendChild(para)          
                             })
                     } else {
                         p.innerHTML = keys[index] + ': ' + element;
