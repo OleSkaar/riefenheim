@@ -331,7 +331,17 @@ var logicController = (function() {
         },
         
         moon: function (day) {
-            var phase, phaseLength = 3, dayRounded = Math.floor(day/phaseLength), phases = ['New', 'Young', 'Waxing Crescent', 'Waxing Quarter', 'Waxing Gibbous', 'Full', 'Waning Gibbous', 'Waning Quarter', 'Waning Crescent', 'Old']
+            var phase, phaseLength = 3, dayRounded = Math.floor(day/phaseLength), 
+                phases = ['New', 
+                          'Young', 
+                          'Waxing Crescent', 
+                          'Waxing Quarter', 
+                          'Waxing Gibbous', 
+                          'Full', 
+                          'Waning Gibbous', 
+                          'Waning Quarter', 
+                          'Waning Crescent', 
+                          'Old']
             
                 if (dayRounded === day/phaseLength) {
                     phase = phases[dayRounded - 1]
@@ -340,6 +350,31 @@ var logicController = (function() {
                 }
             
             return phase         
+        },
+        
+        conditionals: function (watches) {
+            var current, conditionals, rain, length = watches.length;
+            
+            current = watches[0];
+            
+            for (var i = 0; i < length -1; i++) {
+                if (watches[i+1].precipitation >= 4) {
+                    rain = true;
+                }
+            }
+            
+            if (rain === true) {
+                if (current.watch === 'Dawn' && current.precipitation <= 2) {
+                    conditionals = 'Red skies in the morning. It will rain later.'
+                } else if (current.precipitation === 3) {
+                    conditionals = 'Birds fly low. Leaves are upturned. Smoke hovers near the ground. It will rain later.'
+                }
+            } 
+                    
+                    
+            rain = false;
+                    
+            return conditionals
         }
     }
     
@@ -786,12 +821,17 @@ var controller = (function(logicCtrl, dataCtrl, UICtrl) {
                     })
                 
                 // 3. Update watch list 
-                    var newList = dataCtrl.updateArray(watches, newWatches)        
+                    var newList = dataCtrl.updateArray(watches, newWatches) 
                     
-                // 4. Update UI    
+                // 4. Check conditionals    
+                    console.log(newList)
+                    var lore = logicCtrl.conditionals(newList)
+                    console.log(lore)
+                    
+                // 5. Update UI    
                     UICtrl.updateUI(newList);    
                     
-                // 5. Update event listener
+                // 6. Update event listener
                     var btn = document.getElementById('nextWatch');
                     var newBtn = btn.cloneNode(true)
                     btn.parentNode.replaceChild(newBtn, btn)    
