@@ -282,6 +282,39 @@ var logicController = (function() {
             
         },
         
+        fog: function(watch, newPrecip, newTime) {
+            var result;
+            // Dependent on season
+            // Winter
+            if (watch.month > 10 || watch.month < 4) {
+                if (newPrecip === 0) {
+                    result = 1;
+                }
+            } 
+            // Fall or spring
+            if ((watch.month > 3 && watch.month < 6) || (watch.month > 7 && watch.month < 11)) {
+                if (watch.precipitation > 3 && newPrecip < 4) {
+                    result = 2;
+                }
+            } 
+            // Summer
+            if (watch.month > 5 && watch.month < 8) {
+                var first = dataController.getWatchNames();
+                if (newTime === first[0] && watch.precipitation > 2) {
+                    result = 1;
+                }
+            } 
+            
+            if (result === undefined) {
+                result = watch.fog - 1
+                    if (result < 0 || result === undefined) {
+                        result = 0;
+                    }
+            }
+                
+            return result    
+        },
+        
         diceRoll: function(die) {
             
             var result = Math.floor(Math.random() * die) + 1;
@@ -353,28 +386,49 @@ var logicController = (function() {
         },
         
         conditionals: function (watches) {
-            var current, conditionals, rain, length = watches.length;
+            var current, next, conditional, rain, storm, length = watches.length;
             
             current = watches[0];
+            next = watches[1];
             
-            for (var i = 0; i < length -1; i++) {
-                if (watches[i+1].precipitation >= 4) {
-                    rain = true;
+            function checkWatches (stateNumber) {
+                var condition;
+                for (var i = 0; i < length -1; i++) {
+                    if (watches[i+1].precipitation >= stateNumber) {
+                        condition = true;
+                    }
                 }
+                return condition
             }
+            
+            rain = checkWatches(4)
+            storm = checkWatches(7)
             
             if (rain === true) {
                 if (current.watch === 'Dawn' && current.precipitation <= 2) {
-                    conditionals = 'Red skies in the morning. It will rain later.'
+                    conditional = 'Red skies in the morning. It will rain later.'
                 } else if (current.precipitation === 3) {
-                    conditionals = 'Birds fly low. Leaves are upturned. Smoke hovers near the ground. It will rain later.'
+                    conditional = 'Birds fly low. Leaves are upturned. Smoke hovers near the ground. It will rain later.'
+                } else if ((current.precipitation === 1 || current.precipitation === 2) && current.wind >= 2) {
+                    conditional = 'Clouds moving against the wind. It will rain later.'
+                } else if ((current.sun.watches.includes(false) && current.precipitation <= 3) || 
+                           (next.sun.watches.includes(false) && current.precipitation <= 3)) {
+                    conditional = 'Halo around the moon. It will rain later.'
                 }
             } 
+            
+            if (storm === true) {
+                conditional = 'Tall, dark clouds to the west. There is a storm coming.'
+            }
+            
+            if (rain === undefined && storm === undefined) {
+                if ((current.sun.watches.includes(true) && current.sun.watches.includes(false)) || 
+                    (next.sun.watches.includes(true) && next.sun.watches.includes(false))) {
+                    conditional = 'Red skies at night. The skies will be clear later.'
+                }
+            }
                     
-                    
-            rain = false;
-                    
-            return conditionals
+            return conditional
         }
     }
     
@@ -562,7 +616,7 @@ var locations = {
         
         newWatches: function (currentWatch) {
             
-            function Watch(watch, location, day, month, year, precipitation, wind, temperature, sun, moon, encounter) {
+            function Watch(watch, location, day, month, year, precipitation, wind, temperature, fog, sun, moon, encounter) {
                 this.watch = watch;
                 this.location = location;
                 this.day = day;
@@ -571,6 +625,7 @@ var locations = {
                 this.precipitation = precipitation;
                 this.wind = wind;
                 this.temperature = temperature;
+                this.fog = fog;
                 this.sun = sun;
                 this.moon = moon;
                 this.encounter = encounter;
@@ -636,6 +691,7 @@ var locations = {
                 newWatch.precipitation = logicController.weather(current, current.precipitation, 'Precipitation')
                 newWatch.wind = logicController.weather(current, current.wind, 'Wind')
                 newWatch.temperature = dataController.getMonths()[current.month -1].temperature
+                newWatch.fog = logicController.fog(current, newWatch.precipitation, newWatch.watch)
                 
                 return newWatch
             }
@@ -848,6 +904,10 @@ var controller = (function(logicCtrl, dataCtrl, UICtrl) {
             // 1. Load the JSON file
             dataCtrl.getJSON('data.json', function(response) {
                 var watches = dataCtrl.getLatestWatches(response);
+                
+                //2. Check conditionals
+                var lore = logicCtrl.conditionals(watches)
+                console.log(lore)
                 
                 // 2. Send to DOM
                 UICtrl.updateUI(watches);
