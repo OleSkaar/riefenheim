@@ -639,7 +639,7 @@ var months = [
 
 var locations = {
     "Grasslands": {precipitationMean: 1, windMean: 4, temperatureModifier: 0},
-    "Marsh": {precipitationMean: 4, windMean: 0, temperatureModifier: `1}
+    "Marsh": {precipitationMean: 4, windMean: 0, temperatureModifier: 1}
 }
     
     return {
