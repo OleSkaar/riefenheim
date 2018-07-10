@@ -479,7 +479,29 @@ var dataController = (function() {
     
 var watchNames = ['Dawn', 'Midday', 'Evening', 'Dusk', 'First night', 'Second night'];
     
-var precipitationEffects = [{}]    
+var weatherEffects = {
+    precipitation: [
+        {level: 'Clear skies', effect: '+1 temperature (already calculated).'}, 
+        {level: 'Wispy clouds', effect: '+1 temperature (already calculated).'},
+        {level: 'Thick, cottony clouds', effect: 'No effect.'},
+        {level: 'Low-hanging, grey clouds', effect: 'No effect.'},
+        {level: 'Light rain', effect: 'Visual range reduced to 75%. Characters soaked after 3 watches (-1 temp).'},
+        {level: 'Medium rain', effect: 'Visual range reduced to 50%. Characters soaked after 2 watches (-1 temp). Disadvantage to Perception.'},
+        {level: 'Heavy rain and dark clouds', effect: 'Visual range reduced to 25%. Characters soaked after 1 watch (-1 temp). Disadvantage to Perception.'},
+        {level: 'Storm', effect: 'Visual range reduced to 25%. Characters instantly soaked (-1 temp). Disadvantage to Perception.'},
+        {level: 'Thunderstorm', effect: 'Visual range reduced to 25%. Characters instantly soaked (-1 temp). Disadvantage to Perception. Each hour outside, 1% chance that lightning hits party. 10d10 lightning dmg, random target, lasts 1 minute. +25% chance for each level of elevation.'}],
+    wind: [
+       {level: 'Calm', effect: 'Smoke rises vertically.'},
+       {level: 'Fresh breeze', effect: 'Wind felt on face, leaves rustle.'},
+       {level: 'Moderate breeze', effect: 'Small tree branches move, tall grass sways.'},
+       {level: 'Strong breeze', effect: 'Large branches move, tents and other loose items shake.'},
+       {level: 'Near gale', effect: '-1 temperature (already calculated). Whole trees in motion. Inconvenience felt walking against wind.'}, 
+       {level: 'Fresh gale', effect: '-1 temperature (already calculated). Twigs break off trees.'},
+       {level: 'Strong gale', effect: '-1 temperature (already calculated). Disadvantage to ranged attacks.'},
+       {level: 'Storm', effect: '-1 temperature (already calculated). Disadvantage to ranged attacks. Movement speed reduced by 25%.'},
+       {level: 'Hurricane', effect: '-1 temperature (already calculated). Disadvantage to ranged attacks. Movement speed reduced by 25%. In forest, 25% chance each round to be hit by flying branch. DC 15 Dex save or 1d6 dmg. In open terrain, DC 12 Str save or be knocked prone when trying to move.'}
+    ]
+}
     
 var encounters = {
     "Grasslands": [
@@ -620,7 +642,15 @@ var encounters = {
             "secondaryTraces": "Shed scales"
         }
     ],
-    "Marsh": []
+    "Marsh": [
+            {
+            "creature": "Giant eagle",
+            "lair": "A nest in an elevated location",
+            "spoor": "A bundle of straw",
+            "tracks": "A piercing eagle scream far away",
+            "primaryTraces": "Uprooted trees",
+            "secondaryTraces": "A large egg shell"
+        }]
 }
 var months = [
     {name: 'Iov\'s Moon', precipitationMean: 1, windMean: 4, volatility: 'low', temperature: -4},
@@ -654,6 +684,10 @@ var locations = {
         
         getLocations: function() {
             return locations
+        },
+        
+        getWeatherEffects: function() {
+            return weatherEffects
         },
         
         newWatches: function (currentWatch) {
@@ -892,8 +926,14 @@ var UIController = (function() {
             printMain(array[3], 4)            
             printMain(array[4], 5)
             printMain(array[5], 6)            
- 
+    
+            var effects = dataController.getWeatherEffects();
+            console.log(effects.precipitation)
             
+            for (var i = 0; i < 2; i++) {
+                console.log(effects.precipitation[array[i].precipitation])
+                console.log(effects.wind[array[i].wind])
+            }
         }
     }
     
