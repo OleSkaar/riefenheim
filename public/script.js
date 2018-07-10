@@ -282,6 +282,27 @@ var logicController = (function() {
             
         },
         
+        temperature: function(watch) {
+            var temp = dataController.getMonths()[watch.month -1].temperature;
+            
+            if (watch.sun.watches.includes('Easterly sun') || watch.sun.watches.includes('Westerly sun')) {
+                temp += 1;
+            }
+            
+            if (watch.wind > 3) {
+                temp -= 1;
+            }
+            
+            if (watch.precipitation < 2) {
+                temp += 1;   
+            }
+            
+            var local = dataController.getLocations()[watch.location].temperatureModifier;
+            temp += local;
+            
+            return temp
+        },
+        
         fog: function(watch, newPrecip, newTime) {
             var result;
             // Dependent on season
@@ -431,8 +452,8 @@ var logicController = (function() {
                     conditional = 'Birds fly low. Leaves are upturned. Smoke hovers near the ground. It will rain later.'
                 } else if ((current.precipitation === 1 || current.precipitation === 2) && current.wind >= 2) {
                     conditional = 'Clouds moving against the wind. It will rain later.'
-                } else if ((current.sun.watches.includes(false) && current.precipitation <= 3) || 
-                           (next.sun.watches.includes(false) && current.precipitation <= 3)) {
+                } else if ((current.sun.watches.includes('Night') && current.precipitation <= 3) || 
+                           (next.sun.watches.includes('Night') && current.precipitation <= 3)) {
                     conditional = 'Halo around the moon. It will rain later.'
                 }
             } 
@@ -442,8 +463,7 @@ var logicController = (function() {
             }
             
             if (rain === undefined && storm === undefined) {
-                if ((current.sun.watches.includes(true) && current.sun.watches.includes(false)) || 
-                    (next.sun.watches.includes(true) && next.sun.watches.includes(false))) {
+                if ((current.sun.watches.includes('Sunset')) || (next.sun.watches.includes('Sunset'))) {
                     conditional = 'Red skies at night. The skies will be clear later.'
                 }
             }
@@ -458,6 +478,8 @@ var logicController = (function() {
 var dataController = (function() {
     
 var watchNames = ['Dawn', 'Midday', 'Evening', 'Dusk', 'First night', 'Second night'];
+    
+var precipitationEffects = [{}]    
     
 var encounters = {
     "Grasslands": [
@@ -616,8 +638,8 @@ var months = [
     ]
 
 var locations = {
-    "Grasslands": {precipitationMean: 1, windMean: 4},
-    "Marsh": {precipitationMean: 4, windMean: 0}
+    "Grasslands": {precipitationMean: 1, windMean: 4, temperatureModifier: 0},
+    "Marsh": {precipitationMean: 4, windMean: 0, temperatureModifier: `1}
 }
     
     return {
@@ -710,7 +732,7 @@ var locations = {
                 
                 newWatch.precipitation = logicController.weather(current, current.precipitation, 'Precipitation')
                 newWatch.wind = logicController.weather(current, current.wind, 'Wind')
-                newWatch.temperature = dataController.getMonths()[current.month -1].temperature
+                newWatch.temperature = logicController.temperature(newWatch)
                 newWatch.fog = logicController.fog(current, newWatch.precipitation, newWatch.watch)
                 
                 return newWatch
@@ -902,7 +924,7 @@ var controller = (function(logicCtrl, dataCtrl, UICtrl) {
                 // 4. Check conditionals    
                     console.log(newList)
                     var lore = logicCtrl.conditionals(newList)
-                    console.log(lore)
+                    console.log('Weather lore: ' + lore)
                     
                 // 5. Update UI    
                     UICtrl.updateUI(newList);    
