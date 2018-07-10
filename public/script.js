@@ -306,10 +306,16 @@ var logicController = (function() {
             } 
             
             if (result === undefined) {
-                result = watch.fog - 1
-                    if (result < 0 || result === undefined) {
-                        result = 0;
-                    }
+                
+                if (watch.fog === undefined) {
+                    result = 0;
+                } else {
+                    result = watch.fog - 1
+                }
+                
+                if (result < 0) {
+                    result = 0;
+                }
             }
                 
             return result    
@@ -331,15 +337,15 @@ var logicController = (function() {
             function Sun(hours, rem) {
                 this.totalHours = hours
                 this.remainingHours = rem;
-                this.watches = [false, false, false, false];
+                this.watches = ['Night', 'Night', 'Night', 'Night'];
             }
 
             var sun = new Sun(watch.sun.totalHours, watch.sun.remainingHours);
-            var lastWatch = dataController.getWatchNames()[5]
+            var finalWatch = dataController.getWatchNames()[5]
 
-            if (watch.watch === lastWatch) {
+            if (watch.watch === finalWatch) {
                 
-                if (watch.month >= 6) {
+                if (watch.month > 6) {
                     sun.totalHours = sun.totalHours - dailyDifference
                     sun.remainingHours = Math.round(sun.totalHours)
                 } else {
@@ -349,11 +355,25 @@ var logicController = (function() {
             }
             
             if (sun.remainingHours !== 0) {
+                var solarNoon = Math.round(sun.totalHours/2)
                 
                 sun.watches.forEach(function(element, index) {
                     
-                    if (element === false && sun.remainingHours !== 0) {
-                        sun.watches[index] = true;
+                    if (element === 'Night' && sun.remainingHours !== 0) {
+                        if (sun.remainingHours === Math.round(sun.totalHours)) {
+                            console.log('sunrise')
+                            sun.watches[index] = 'Sunrise';
+                        } else if (sun.remainingHours === solarNoon) {
+                            sun.watches[index] = 'Solar noon'
+                        } else if (sun.remainingHours - 1 === 0) {
+                            sun.watches[index] = 'Sunset'
+                        } else {
+                            if (sun.remainingHours > solarNoon) {
+                                sun.watches[index] = 'Easterly sun'
+                            } else {
+                                sun.watches[index] = 'Westerly sun'
+                            }
+                        }
                         sun.remainingHours = sun.remainingHours -1
                     }
                     
@@ -907,7 +927,7 @@ var controller = (function(logicCtrl, dataCtrl, UICtrl) {
                 
                 //2. Check conditionals
                 var lore = logicCtrl.conditionals(watches)
-                console.log(lore)
+                console.log('Weather lore: ' + lore)
                 
                 // 2. Send to DOM
                 UICtrl.updateUI(watches);
