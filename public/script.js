@@ -643,14 +643,135 @@ var encounters = {
         }
     ],
     "Marsh": [
-            {
-            "creature": "Giant eagle",
-            "lair": "A nest in an elevated location",
-            "spoor": "A bundle of straw",
-            "tracks": "A piercing eagle scream far away",
-            "primaryTraces": "Uprooted trees",
-            "secondaryTraces": "A large egg shell"
-        }]
+        {
+            "creature": "Shambling Mound",
+            "lair": "A murky marsh pond",
+            "spoor": "Crushed animal bones covered in rotten plant matter",
+            "tracks": "A slimy streak of rotten plant matter",
+            "primaryTraces": "The foul stench of compost",
+            "secondaryTraces": "A large swamp bush charred by lightning"
+        },
+        {
+            "creature": "2d3 nothics",
+            "lair": "A small underground cave. 1 table B item (p. 144 DMG). Writings that reference the powerful magic of the great fortress in the West",
+            "spoor": "Draconic runes carved into a stone (gives general direction towards lair)",
+            "tracks": "Humanoid footprints with three claws",
+            "primaryTraces": "The feeling of being observed",
+            "secondaryTraces": "Whispers in Undercommon pertaining to the characters' deepest secrets"
+        },
+        {
+            "creature": "Oni (shapeshifted into a lizardman during the day, shapeshifts into a human if it surprises party)",
+            "lair": "A small, well-kept stone house. 1 table B item (p. 144 DMG). Copious notes on lizardman civilization: what they eat, their reverence for the Reptile Matriarch, their tribal structure, etc",
+            "spoor": "A well-concealed, extinguished campfire. Investigation reveals lizardfolk bones and eggshells",
+            "tracks": "Large, humanoid footprints",
+            "primaryTraces": "Long, black hairs stuck on a bush",
+            "secondaryTraces": "A dead lizardman with a short ivory horn stuck in his chest"
+        },
+        {
+            "creature": "2d4 giant toads",
+            "lair": "A swamp pond with lots of regular toads",
+            "spoor": "Flies buzzing incessantly",
+            "tracks": "Sporadic, large webbed footprints, four and four",
+            "primaryTraces": "A bellowing, loud quack",
+            "secondaryTraces": "Patches of flattened grass"
+        },   
+        {
+            "creature": "Green hag",
+            "lair": "A coven of three hags (this, sea hag & night hag) dwelling in a thatched hut. 50% chance for each hag to be present. 1 table F item (p. 146 DMG)",
+            "spoor": "A faraway voice crying for help in Common",
+            "tracks": "Footprints from slim human feet",
+            "primaryTraces": "Twisted, blackened trees",
+            "secondaryTraces": "A foul, stinking fog"
+        },
+        {
+            "creature": "3d6 lizardmen",
+            "lair": "A simple campsite. Frogs grilling on a spit and spears in the ground indicate recent activity",
+            "spoor": "A slain, skinned, and gutten giant toad",
+            "tracks": "Many footprints of humanoid feet that have toe webbing and long claws",
+            "primaryTraces": "A broken necklace made from bear teeth",
+            "secondaryTraces": "Drums in the distance"
+        },
+        {
+            "creature": "1d10 lizardmen and a shaman",
+            "lair": "A simple campsite, with a separate tent covered in bones and other relics",
+            "spoor": "Dead snakes organized in a dragon-shaped pattern",
+            "tracks": "Many footprints of humanoid feet that have toe webbing and long claws",
+            "primaryTraces": "A broken necklace made from bear teeth",
+            "secondaryTraces": "Drums and chanting in the distance, lanterns in the distance if at night"
+        },
+        {
+            "creature": "1d4 giant constrictors",
+            "lair": "The base of a large, sunken will tree",
+            "spoor": "Remains of a lizardman with crushed bones",
+            "tracks": "Slimy trackmarks through the swamp grass",
+            "primaryTraces": "Something moving below the water",
+            "secondaryTraces": "Tall grass shaking"
+        },
+        {
+            "creature": "Troll (only found outside during night)",
+            "lair": "A cave under an old, crumbling stone bridge",
+            "spoor": "A bush burned to the ground, torch nearby, signs of a struggle",
+            "tracks": "Large, wide, humanoid footprints",
+            "primaryTraces": "A large, green severed arm",
+            "secondaryTraces": "Large felled trees"
+        },
+        {
+            "creature": "1d6 will-o-wisps (DC 14 Wisdom not to be compelled to follow, new save at end of turn)",
+            "lair": "A field of tar, acting like quicksand (p. 110 DMG)",
+            "spoor": "A lifeless troll covered in tar",
+            "tracks": "None",
+            "primaryTraces": "Glowing lantern-like lights in the distance (DC 14 Wisdom not to be compelled to follow, new save at end of turn)",
+            "secondaryTraces": "Faint, distant whispers (DC 14 Wisdom not to be compelled to follow, new save at end of turn)"
+        },
+        {
+            "creature": "Sea hag",
+            "lair": "A coven of three hags (this, sea hag & night hag) dwelling in a thatched hut. 50% chance for each hag to be present. 1 table F item (p. 146 DMG)",
+            "spoor": "A mangled white dove",
+            "tracks": "Slim humanoid footprints with webbed feet",
+            "primaryTraces": "Streaks of seaweed stuck to the marsh grass",
+            "secondaryTraces": "Discarded gutted fish by a marsh pond"
+        },
+        {
+            "creature": "2d5 swarms of poisonous snakes",
+            "lair": "The roots of an old tree growing sideways",
+            "spoor": "White snake eggs under a bush",
+            "tracks": "Hundreds of slimy trails",
+            "primaryTraces": "Dead rabbits with snake bites",
+            "secondaryTraces": "Slithering noises"
+        },         
+        {
+            "creature": "Night hag",
+            "lair": "A coven of three hags (this, sea hag & night hag) dwelling in a thatched hut. 50% chance for each hag to be present. 1 table F item (p. 146 DMG)",
+            "spoor": "Pieces of a burgundy robe stuck on a thorn bush",
+            "tracks": "Shoeprints of someone with a slim foot",
+            "primaryTraces": "Nightmare haunting during sleep (p. 178 MM)",
+            "secondaryTraces": "The feeling of being observed"
+        },
+        {
+            "creature": "Wyvern",
+            "lair": "The ruins of an old tower",
+            "spoor": "A stray deer with blackened, disintegrated veins",
+            "tracks": "Wings on the horizon",
+            "primaryTraces": "A terrible shriek in the distance",
+            "secondaryTraces": "Flocks of birds escaping frantically"
+        },
+        {
+            "creature": "1d3 basilisks",
+            "lair": "An old underground cellar. 50% chance to find 1d3 basilisk eggs",
+            "spoor": "A very lifelike statue of a lizardman",
+            "tracks": "Footprints from a four-clawed beast with six feet",
+            "primaryTraces": "Remains of a partially petrified, partially chewed up racooon",
+            "secondaryTraces": "Grass shaking"
+        },
+        {
+            "creature": "Young green dragon (the Reptile Matriarch)",
+            "lair": "A huge treasure-laden vault in the ruins of the great city to the west. Double treasure",
+            "spoor": "A flock of half-consumed giant toads, their throats clawed at as they gasped for air through asphyxiating poison",
+            "tracks": "Large clawed footprints on the ground, accompanied by lizardmen tracks",
+            "primaryTraces": "A great roar in the distance",
+            "secondaryTraces": "A momentary shadow passing overhead"
+        }         
+    ]
 }
 var months = [
     {name: 'Iov\'s Moon', precipitationMean: 1, windMean: 4, volatility: 'low', temperature: -4},
