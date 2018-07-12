@@ -25108,5 +25108,61 @@
     "encounter": {
       "text": "Nothing"
     }
+  },
+  {
+    "watch": "Evening",
+    "location": "Grasslands",
+    "day": 11,
+    "month": 1,
+    "year": 1353,
+    "precipitation": 3,
+    "wind": 3,
+    "temperature": -4,
+    "fog": 0,
+    "sun": {
+      "totalHours": 6.599999999999998,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Waxing Quarter",
+    "encounter": {
+      "text": "Nothing"
+    }
+  },
+  {
+    "watch": "Dusk",
+    "location": "Grasslands",
+    "day": 11,
+    "month": 1,
+    "year": 1353,
+    "precipitation": 3,
+    "wind": 3,
+    "temperature": -4,
+    "fog": 0,
+    "sun": {
+      "totalHours": 6.599999999999998,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Waxing Quarter",
+    "encounter": {
+      "time": 1,
+      "creature": "9 kobolds",
+      "type": "Encounter",
+      "text": "Returning to lair with treasure equal to xp value",
+      "distance": "500 feet",
+      "direction": "North-east",
+      "heading": "South-west"
+    }
   }
 ]
