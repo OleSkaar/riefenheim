@@ -7,90 +7,103 @@
     </head>
 <body>  
     
-    
-<div class="container">   
+<header>
     <div class="grid-item"><h1>Riefenheim</h1></div>
     <div class="grid-item">12/12/1352</div>
-    <div class="grid-item"><img src="hamburger_icon.svg"></div>   
-    <div class="grid-item">
-        <p>Evening</p>
+    <div class="grid-item"><img src="hamburger_icon.svg"></div>    
+</header>    
+    
+    
+<div class="container" id="mainContainer">   
+    <div class="grid-item" id="daylight0">
+        <div class="sun night"></div>
+        <div class="sun night"></div>
+        <div class="sun night"></div>
+        <div class="sun night"></div>
+    </div>
+    <div class="grid-item" id="encounter0">
+        <p><strong>Evening</strong></p>
         <p>2 lizardmen and a shaman</p>
-        <p>Building a new lair (Perception 10 to hear)</p>
-        <p>350 feet to the west</p>
-    </div>
-    <div class="grid-item">
+        <p class="smallText">Building a new lair (Perception 10 to hear)</p>
+        <p class="smallText">350 feet to the west</p> 
+    </div>    
+    <div class="grid-item" id="weather0">
+        <p>-----||||</p>
         <p>Thick, cottony clouds</p>
-        <p>Near gale.</p> 
-        <p style="font-size: 12px">-1 temperature (already calculated). Whole trees in motion. Inconvenience felt walking against the wind.</p>
+        <p>Near gale</p> 
+        <p class="smallText">-1 temperature (already calculated). Whole trees in motion. Inconvenience felt walking against the wind.</p>
     </div>
-    <div class="grid-item">
-        <div class="sun night">&nsbp;</div>
-        <div class="sun night">&nsbp;</div>
-        <div class="sun night">&nsbp;</div>
-        <div class="sun night">&nsbp;</div>
-    </div> 
-    <div class="grid-item">
-        <p>Dusk</p>
+    <div class="grid-item" id="temperature0">
+        <p>-3</p>
+    </div>
+    <div class="grid-item" id="daylight1">
+        <div class="sun night"></div>
+        <div class="sun night"></div>
+        <div class="sun night"></div>
+        <div class="sun night"></div>
+    </div>     
+    <div class="grid-item" id="encounter1">
+        <p><strong>Dusk</strong></p>
         <p>No encounter</p>
     </div>
-    <div class="grid-item">
+    <div class="grid-item" id="weather1">
+        <p>-----|</p>
         <p>Thick, cottony clouds</p>
     </div>
-    <div class="grid-item">
-        <div class="sun night">&nsbp;</div>
-        <div class="sun night">&nsbp;</div>
-        <div class="sun night">&nsbp;</div>
-        <div class="sun night">&nsbp;</div>
+    <div class="grid-item"  id="temperature1">
+        <p>-2</p>
+    </div>    
+   <div class="grid-item" id="daylight2">
+       <div class="sun night">N</div>
+    </div>
+    <div class="grid-item" id="encounter2">First night</div>
+    <div class="grid-item" id="weather2">------|||</div>
+    <div class="grid-item" id="temperature2">
+        <p>-2</p>
+    </div>    
+    <div class="grid-item" id="daylight3">
+        <div class="sun night"></div>
+    </div>
+    <div class="grid-item" id="encounter3">Second night</div>
+    <div class="grid-item" id="weather3">-----||</div>
+    <div class="grid-item" id="temperature3">
+        <p>-3</p>
+    </div>    
+    <div class="grid-item" id="daylight4">
+        <div class="sun sunset"></div>    
     </div> 
-    <div class="grid-item">First night</div>
-    <div class="grid-item"></div>
-    <div class="grid-item">
-        <div class="sun night">&nsbp;</div>    
-    </div> 
-    <div class="grid-item">Second night</div>
-    <div class="grid-item"></div>
-    <div class="grid-item">
-        <div class="sun night">&nsbp;</div>   
-    </div> 
-    <div class="grid-item">Dawn</div>
-    <div class="grid-item"></div>
-    <div class="grid-item">
-        <div class="sun sunset">&nsbp;</div>    
-    </div> 
-    <div class="grid-item">Midday</div>
-    <div class="grid-item"></div>
-    <div class="grid-item">
-        <div class="sun noon">&nsbp;</div>   
-    </div>     
+    <div class="grid-item" id="encounter4">Dawn</div>
+    <div class="grid-item" id="weather4">-----|</div>
+    <div class="grid-item" id="temperature4">
+        <p>-2</p>
+    </div>    
+    <div class="grid-item" id="daylight5">
+        <div class="sun noon"></div>   
+    </div>       
+    <div class="grid-item" id="encounter5">Midday</div>
+    <div class="grid-item" id="weather5">-----||</div>
+    <div class="grid-item" id="temperature5">
+        <p>-2</p>
+    </div>    
 </div>
+    
+<form> 
+    <div id="locations">
+        <input type="radio" id="grasslands" name="location" value="Grasslands">
+        <label for="grasslands">Grasslands</label>
+
+        <input type="radio" id="marsh" name="location" value="Marsh">
+        <label for="marsh">Marsh</label>
+    </div>
+</form>
     
 <div id="buttons">
     <button>Back</button>
     <button>Forward</button>
     <button>Latest</button>
-    <button>New</button>
+    <button id="nextWatch">New</button>
 </div>
    
-<!--    
-<header id="header">
-    <div class="fiftyPercent"><p id="name">Riefenheim</p></div>
-    <div class="fourtyPercent"><p id="date">12/12/1352</p></div>
-    <div class="tenPercent"><p id="menu">M</p></div>
-</header>
-
-    
-<button id="nextWatch">Next watch</button>
-
-<form> 
-    <div id="locations">
-        <input type="radio" id="grasslands" name="location" value="Grasslands">
-        <label for="grasslands">Grasslands</label>
-        
-        <input type="radio" id="marsh" name="location" value="Marsh">
-        <label for="marsh">Marsh</label>
-    </div>
-</form>
-!--> 
 
 <script src="script.js"></script>
     

@@ -25164,5 +25164,373 @@
       "direction": "North-east",
       "heading": "South-west"
     }
+  },
+  {
+    "watch": "First night",
+    "location": "Grasslands",
+    "day": 11,
+    "month": 1,
+    "year": 1353,
+    "precipitation": 3,
+    "wind": 3,
+    "temperature": -4,
+    "fog": 0,
+    "sun": {
+      "totalHours": 6.599999999999998,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Waxing Quarter",
+    "encounter": {
+      "time": 1,
+      "creature": "5 goblins and a goblin boss",
+      "type": "Encounter",
+      "text": "Defending lair",
+      "distance": "450 feet",
+      "direction": "North",
+      "heading": "West"
+    }
+  },
+  {
+    "watch": "Second night",
+    "location": "Grasslands",
+    "day": 11,
+    "month": 1,
+    "year": 1353,
+    "precipitation": 3,
+    "wind": 3,
+    "temperature": -4,
+    "fog": 0,
+    "sun": {
+      "totalHours": 6.599999999999998,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Waxing Quarter",
+    "encounter": {
+      "text": "Nothing"
+    }
+  },
+  {
+    "watch": "Dawn",
+    "location": "Grasslands",
+    "day": 12,
+    "month": 1,
+    "year": 1353,
+    "precipitation": 2,
+    "wind": 3,
+    "temperature": -3,
+    "fog": 0,
+    "sun": {
+      "totalHours": 6.666666666666664,
+      "remainingHours": 3,
+      "watches": [
+        "Sunrise",
+        "Easterly sun",
+        "Easterly sun",
+        "Easterly sun"
+      ]
+    },
+    "moon": "Waxing Quarter",
+    "encounter": {
+      "text": "Nothing"
+    }
+  },
+  {
+    "watch": "Midday",
+    "location": "Grasslands",
+    "day": 12,
+    "month": 1,
+    "year": 1353,
+    "precipitation": 2,
+    "wind": 3,
+    "temperature": -3,
+    "fog": 0,
+    "sun": {
+      "totalHours": 6.666666666666664,
+      "remainingHours": 0,
+      "watches": [
+        "Solar noon",
+        "Westerly sun",
+        "Sunset",
+        "Night"
+      ]
+    },
+    "moon": "Waxing Quarter",
+    "encounter": {
+      "time": 4,
+      "creature": "Giant eagle",
+      "type": "Encounter",
+      "text": "Just passing by. Friendly.",
+      "distance": "450 feet",
+      "direction": "South",
+      "heading": "South"
+    }
+  },
+  {
+    "watch": "Evening",
+    "location": "Grasslands",
+    "day": 12,
+    "month": 1,
+    "year": 1353,
+    "precipitation": 3,
+    "wind": 3,
+    "temperature": -4,
+    "fog": 0,
+    "sun": {
+      "totalHours": 6.666666666666664,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Waxing Quarter",
+    "encounter": {
+      "time": 1,
+      "creature": "3d4 kobolds",
+      "type": "Spoor",
+      "text": "Big footprints"
+    }
+  },
+  {
+    "watch": "Dusk",
+    "location": "Grasslands",
+    "day": 12,
+    "month": 1,
+    "year": 1353,
+    "precipitation": 2,
+    "wind": 3,
+    "temperature": -4,
+    "fog": 0,
+    "sun": {
+      "totalHours": 6.666666666666664,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Waxing Quarter",
+    "encounter": {
+      "text": "Nothing"
+    }
+  },
+  {
+    "watch": "First night",
+    "location": "Grasslands",
+    "day": 12,
+    "month": 1,
+    "year": 1353,
+    "precipitation": 2,
+    "wind": 4,
+    "temperature": -5,
+    "fog": 0,
+    "sun": {
+      "totalHours": 6.666666666666664,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Waxing Quarter",
+    "encounter": {
+      "text": "Nothing"
+    }
+  },
+  {
+    "watch": "Second night",
+    "location": "Grasslands",
+    "day": 12,
+    "month": 1,
+    "year": 1353,
+    "precipitation": 2,
+    "wind": 3,
+    "temperature": -4,
+    "fog": 0,
+    "sun": {
+      "totalHours": 6.666666666666664,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Waxing Quarter",
+    "encounter": {
+      "text": "Nothing"
+    }
+  },
+  {
+    "watch": "Dawn",
+    "location": "Marsh",
+    "day": 13,
+    "month": 1,
+    "year": 1353,
+    "precipitation": 2,
+    "wind": 4,
+    "temperature": -3,
+    "fog": 0,
+    "sun": {
+      "totalHours": 6.733333333333331,
+      "remainingHours": 3,
+      "watches": [
+        "Sunrise",
+        "Easterly sun",
+        "Easterly sun",
+        "Easterly sun"
+      ]
+    },
+    "moon": "Waxing Quarter",
+    "encounter": {
+      "text": "Nothing"
+    }
+  },
+  {
+    "watch": "Midday",
+    "location": "Marsh",
+    "day": 13,
+    "month": 1,
+    "year": 1353,
+    "precipitation": 3,
+    "wind": 4,
+    "temperature": -3,
+    "fog": 0,
+    "sun": {
+      "totalHours": 6.733333333333331,
+      "remainingHours": 0,
+      "watches": [
+        "Solar noon",
+        "Westerly sun",
+        "Sunset",
+        "Night"
+      ]
+    },
+    "moon": "Waxing Gibbous",
+    "encounter": {
+      "text": "Nothing"
+    }
+  },
+  {
+    "watch": "Evening",
+    "location": "Marsh",
+    "day": 13,
+    "month": 1,
+    "year": 1353,
+    "precipitation": 3,
+    "wind": 4,
+    "temperature": -4,
+    "fog": 0,
+    "sun": {
+      "totalHours": 6.733333333333331,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Waxing Gibbous",
+    "encounter": {
+      "text": "Nothing"
+    }
+  },
+  {
+    "watch": "Dusk",
+    "location": "Marsh",
+    "day": 13,
+    "month": 1,
+    "year": 1353,
+    "precipitation": 3,
+    "wind": 4,
+    "temperature": -4,
+    "fog": 0,
+    "sun": {
+      "totalHours": 6.733333333333331,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Waxing Gibbous",
+    "encounter": {
+      "time": 2,
+      "creature": "Troll (only found outside during night)",
+      "type": "Spoor",
+      "text": "Large, wide, humanoid footprints"
+    }
+  },
+  {
+    "watch": "First night",
+    "location": "Marsh",
+    "day": 13,
+    "month": 1,
+    "year": 1353,
+    "precipitation": 3,
+    "wind": 4,
+    "temperature": -4,
+    "fog": 0,
+    "sun": {
+      "totalHours": 6.733333333333331,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Waxing Gibbous",
+    "encounter": {
+      "text": "Nothing"
+    }
+  },
+  {
+    "watch": "Second night",
+    "location": "Marsh",
+    "day": 13,
+    "month": 1,
+    "year": 1353,
+    "precipitation": 4,
+    "wind": 2,
+    "temperature": -3,
+    "fog": 0,
+    "sun": {
+      "totalHours": 6.733333333333331,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Waxing Gibbous",
+    "encounter": {
+      "text": "Nothing"
+    }
   }
 ]

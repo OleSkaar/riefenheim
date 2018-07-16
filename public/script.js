@@ -976,6 +976,11 @@ var UIController = (function() {
         5: '5',
         6: '6',
         locationButtons: 'locations',
+        container: 'mainContainer',
+        daylight: 'daylight',
+        encounter: 'encounter',
+        weather: 'weather',
+        temperature; 'temperature'
     }
     
     return {
@@ -1001,11 +1006,17 @@ var UIController = (function() {
         
         updateUI: function(array) {
             
-            function printMain (arr, side) {
-                // 1. Set location radio button
-                var location = arr.location;
+            function removeChildren (id) {
+                var div = document.getElementById(id)
+                while (div.firstChild) {
+                    div.removeChild(div.firstChild);
+                }
+            }
+            
+            // 1. Set location radio button
+                var last = array.length -1;
+                var location = array[last].location;
                 var buttons = document.getElementById(DOMstrings.locationButtons).getElementsByTagName('input');
-                
                 
                 for (var i = 0; i < buttons.length; i++) {
                     if (buttons[i].value === location) {
@@ -1013,6 +1024,25 @@ var UIController = (function() {
                         break
                     }
                 }
+            
+            // 2. Print data to UI
+            array.forEach(function(element, index) {
+                // Daylight
+                var daylight = DOMstrings.daylight + index;
+                removeChildren(daylight)
+                
+                if (index < 2) {
+                    element.sun.watches.forEach(function(element) {
+                        
+                    })
+                    
+                }
+            })
+            
+            
+            /*
+            function printMain (arr, side) {
+
                 
                 // 2. Print the remaining data
                 var section = document.getElementById(side)
@@ -1055,7 +1085,9 @@ var UIController = (function() {
                 console.log(effects.precipitation[array[i].precipitation])
                 console.log(effects.wind[array[i].wind])
             }
+            */
         }
+        
     }
     
     //If sun pos goes from true to false or vica versa, show sunrise/sunset color
