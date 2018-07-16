@@ -11,7 +11,7 @@ var logicController = (function() {
             // Roll dice to determine if an enounter happens
             var dice = logicController.diceRoll(8);
             if (dice < 7) {
-                result.text = 'Nothing'
+                result.text = 'No encounter'
                 
                 } else {    
                     
@@ -120,7 +120,7 @@ var logicController = (function() {
                         
                         // Distance, direction, and heading
                         
-                        result.distance = (logicController.diceRoll(6) + logicController.diceRoll(6)) * 50 + ' feet'
+                        result.distance = (logicController.diceRoll(6) + logicController.diceRoll(6)) * 50 + ' feet away'
                         
                         function direction () {
                             var directions = ['North','North-east','East', 'South-east','South','South-west','West','North-west']
@@ -385,14 +385,14 @@ var logicController = (function() {
                             console.log('sunrise')
                             sun.watches[index] = 'Sunrise';
                         } else if (sun.remainingHours === solarNoon) {
-                            sun.watches[index] = 'Solar noon'
+                            sun.watches[index] = 'SolarNoon'
                         } else if (sun.remainingHours - 1 === 0) {
                             sun.watches[index] = 'Sunset'
                         } else {
                             if (sun.remainingHours > solarNoon) {
-                                sun.watches[index] = 'Easterly sun'
+                                sun.watches[index] = 'EasterlySun'
                             } else {
-                                sun.watches[index] = 'Westerly sun'
+                                sun.watches[index] = 'WesterlySun'
                             }
                         }
                         sun.remainingHours = sun.remainingHours -1
@@ -502,6 +502,8 @@ var weatherEffects = {
        {level: 'Hurricane', effect: '-1 temperature (already calculated). Disadvantage to ranged attacks. Movement speed reduced by 25%. In forest, 25% chance each round to be hit by flying branch. DC 15 Dex save or 1d6 dmg. In open terrain, DC 12 Str save or be knocked prone when trying to move.'}
     ]
 }
+
+var fogEffects = [{level: 'Light fog', effect: 'Visual range reduced by 50%'}, {level: 'Heavy fog', effect: 'Visual range reduced by 90%'}] 
     
 var encounters = {
     "Grasslands": [
@@ -725,7 +727,7 @@ var encounters = {
         },
         {
             "creature": "Sea hag",
-            "lair": "A coven of three hags (this, sea hag & night hag) dwelling in a thatched hut. 50% chance for each hag to be present. 1 table F item (p. 146 DMG)",
+            "lair": "A coven of three hags (this, green hag & night hag) dwelling in a thatched hut. 50% chance for each hag to be present. 1 table F item (p. 146 DMG)",
             "spoor": "A mangled white dove",
             "tracks": "Slim humanoid footprints with webbed feet",
             "primaryTraces": "Streaks of seaweed stuck to the marsh grass",
@@ -741,7 +743,7 @@ var encounters = {
         },         
         {
             "creature": "Night hag",
-            "lair": "A coven of three hags (this, sea hag & night hag) dwelling in a thatched hut. 50% chance for each hag to be present. 1 table F item (p. 146 DMG)",
+            "lair": "A coven of three hags (this, sea hag & green hag) dwelling in a thatched hut. 50% chance for each hag to be present. 1 table F item (p. 146 DMG)",
             "spoor": "Pieces of a burgundy robe stuck on a thorn bush",
             "tracks": "Shoeprints of someone with a slim foot",
             "primaryTraces": "Nightmare haunting during sleep (p. 178 MM)",
@@ -809,6 +811,10 @@ var locations = {
         
         getWeatherEffects: function() {
             return weatherEffects
+        },
+        
+        getFogEffects: function() {
+            return fogEffects
         },
         
         newWatches: function (currentWatch) {
@@ -980,7 +986,10 @@ var UIController = (function() {
         daylight: 'daylight',
         encounter: 'encounter',
         weather: 'weather',
-        temperature; 'temperature'
+        temperature: 'temperature',
+        daylightIndicator: 'sun',
+        hourIndicator: 'redborder',
+        small: 'smalltext'
     }
     
     return {
@@ -1006,8 +1015,7 @@ var UIController = (function() {
         
         updateUI: function(array) {
             
-            function removeChildren (id) {
-                var div = document.getElementById(id)
+            function removeChildren (div) {
                 while (div.firstChild) {
                     div.removeChild(div.firstChild);
                 }
@@ -1024,68 +1032,147 @@ var UIController = (function() {
                         break
                     }
                 }
+            // 2. Refresh date
+                    // Date
+                    var currentDay = array[0];
+                    var s = '/'
+                    var date = currentDay.day + s + currentDay.month + s + currentDay.year;
+                    var field = document.getElementById('date')
+                    field.innerHTML = date;
             
-            // 2. Print data to UI
-            array.forEach(function(element, index) {
-                // Daylight
-                var daylight = DOMstrings.daylight + index;
-                removeChildren(daylight)
+            // 3. Print data to UI
+            array.forEach(function(element, index, array) {
+                
+                // Daylight indicator, CSS classes match strings in sun.watches array
+                var daylight = document.getElementById(DOMstrings.daylight + index);
+                removeChildren(daylight);
                 
                 if (index < 2) {
-                    element.sun.watches.forEach(function(element) {
+                    element.sun.watches.forEach(function(currentWatch, currentWatchNumber) {
+                        var el = document.createElement('div');
+                        el.classList.add(DOMstrings.daylightIndicator, currentWatch.toLowerCase());
+                        var hour = currentWatchNumber + 1
+                        el.id = element.watch.toLowerCase().replace(/ /g,'') +  hour.toString();
+                        daylight.appendChild(el)
+                    })    
+                } else {
+                    var el = document.createElement('div');
+                    el.classList.add(DOMstrings.daylightIndicator, element.sun.watches[0].toLowerCase());
+                    daylight.appendChild(el)
+                }
+                
+                // Encounter
+                var encounter = document.getElementById(DOMstrings.encounter + index);
+                removeChildren(encounter);
+                
+                var p = document.createElement('p')
+                p.innerHTML = '<strong>' + element.watch + '</strong>';
+                encounter.appendChild(p);
+                
+                if (index < 2) {
+                    var p = document.createElement('p');
+                    
+                    if (element.encounter.type !== undefined) {
+                        p.innerHTML = element.encounter.type + ': ' + element.encounter.creature;
+                        var time = document.getElementById(element.watch.toLowerCase().replace(/ /g,'') + element.encounter.time);
+                        time.classList.add(DOMstrings.hourIndicator);
                         
-                    })
+                        var text = document.createElement('p');
+                        text.innerHTML = element.encounter.text;
+                        text.classList.add(DOMstrings.small);
+                        p.appendChild(text);
+                        
+                        if (element.encounter.type === 'Encounter') {
+
+                            var distance = document.createElement('p')
+                            distance.innerHTML = element.encounter.distance + ' to the ' + element.encounter.direction.toLowerCase()
+                            distance.classList.add(DOMstrings.small)
+                            p.appendChild(distance)
+                            
+                            var heading = document.createElement('p');
+                            if (element.encounter.direction !== element.encounter.heading) {
+                                heading.innerHTML = 'Heading ' + element.encounter.heading.toLowerCase();
+                            } else {
+                                heading.innerHTML = 'Stationary';
+                            }
+                            
+                            heading.classList.add(DOMstrings.small)
+                            p.appendChild(heading)
+                            
+                        }
+                        
+                    } else {
+                        p.innerHTML = element.encounter.text;
+                    }
+                    
+                    encounter.appendChild(p)
                     
                 }
+            // Weather
+            var weather = document.getElementById(DOMstrings.weather + index);
+            removeChildren(weather)
+                
+            var windLevel = document.createElement('p');
+                
+            for (var i = 0; i < 8; i++) {
+                if (element.wind <= i) {
+                    windLevel.innerHTML += '-';
+                } else {
+                    windLevel.innerHTML += '/';
+                }
+            }
+            
+            weather.appendChild(windLevel)
+            
+            if (index < 2) { 
+                
+            var effects = dataController.getWeatherEffects();
+            var windLvl = element.wind;
+            var precipLvl = element.precipitation;
+                
+            function level(lvl, type, effects) {
+                var level = document.createElement('p');
+                level.innerHTML = effects[type][lvl].level
+                var text = document.createElement('p');
+                text.innerHTML = effects[type][lvl].effect;
+                text.classList.add(DOMstrings.small);
+                level.appendChild(text)
+                
+                return level
+            }
+            
+            var wind = level(windLvl, 'wind', effects)
+            weather.appendChild(wind)
+            var precipitation = level(precipLvl, 'precipitation', effects)
+            weather.appendChild(precipitation)
+                
+            if (element.fog > 0) {
+                var fogEffects = dataController.getFogEffects()
+                var fog = document.createElement('p');
+                fog.innerHTML = fogEffects[element.fog].level;
+                
+                var fogEffect = document.createElement('p');
+                fogEffect.innerHTML = fogEffects[element.fog].effect;
+                fogEffect.classList.add(DOMstrings.small)
+                fog.appendChild(fogEffect)
+                
+                weather.appendChild(fog)
+            }
+              
+
+            var conditional = logicController.conditionals(array)
+            if (conditional !== undefined) {   
+                var lore = document.createElement('p');
+                lore.innerHTML = conditional
+                weather.appendChild(lore)
+            }
+                
+            }
+                
+            // End of array loop    
             })
             
             
-            /*
-            function printMain (arr, side) {
-
-                
-                // 2. Print the remaining data
-                var section = document.getElementById(side)
-                    while (section.firstChild) {
-                        section.removeChild(section.firstChild);
-                    }
-                var keys = Object.keys(arr)
-                var arr = Object.values(arr)
-                arr.forEach(function(element, index) {
-                    var p = document.createElement('p')
-                    
-                    if (typeof element === 'object') {
-                        var objIndex = keys[index]
-                        var vals = Object.values(element);
-                        
-                        vals.forEach(function(element, index) {
-                            var para = document.createElement('p')
-                            para.innerHTML = objIndex + ': ' + element;
-                            section.appendChild(para)          
-                            })
-                    } else {
-                        p.innerHTML = keys[index] + ': ' + element;
-                        section.appendChild(p) 
-                    }
-
-                    })    
-            }
-            
-            printMain(array[0], 1)
-            printMain(array[1], 2)
-            printMain(array[2], 3)
-            printMain(array[3], 4)            
-            printMain(array[4], 5)
-            printMain(array[5], 6)            
-    
-            var effects = dataController.getWeatherEffects();
-            console.log(effects.precipitation)
-            
-            for (var i = 0; i < 2; i++) {
-                console.log(effects.precipitation[array[i].precipitation])
-                console.log(effects.wind[array[i].wind])
-            }
-            */
         }
         
     }

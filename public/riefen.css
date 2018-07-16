@@ -70,7 +70,7 @@ header {
     border-bottom: 1px solid black;
 }
 
-.smallText {
+.smalltext {
     font-size: 12px;
 }
 
@@ -89,17 +89,17 @@ header {
     color: coral;
 }
 
-.easterly {
+.easterlysun {
     background-color: lemonchiffon;
     color: lemonchiffon;
 }
 
-.noon {
+.solarnoon {
     background-color: yellow;
     color: yellow;
 }
 
-.westerly {
+.westerlysun {
     background-color: gold;
     color: gold;
 }
@@ -113,6 +113,10 @@ header {
     background-color: lightgrey;
     width: 16.6%;
     float: left;
+}
+
+.redborder {
+    border: 2px solid red;
 }
 
 #buttons {
