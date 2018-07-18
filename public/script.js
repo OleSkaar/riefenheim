@@ -447,24 +447,24 @@ var logicController = (function() {
             
             if (rain === true) {
                 if (current.watch === 'Dawn' && current.precipitation <= 2) {
-                    conditional = 'Red skies in the morning. It will rain later.'
+                    conditional = {name: 'Red skies in the morning', effect: 'It will rain later.'}
                 } else if (current.precipitation === 3) {
-                    conditional = 'Birds fly low. Leaves are upturned. Smoke hovers near the ground. It will rain later.'
+                    conditional = {name: 'Humid air', effect: 'Birds fly low. Leaves are upturned. Smoke hovers near the ground. It will rain later.'}
                 } else if ((current.precipitation === 1 || current.precipitation === 2) && current.wind >= 2) {
-                    conditional = 'Clouds moving against the wind. It will rain later.'
+                    conditional = {name: 'Clouds move against the wind', effect: 'It will rain later.'}
                 } else if ((current.sun.watches.includes('Night') && current.precipitation <= 3) || 
                            (next.sun.watches.includes('Night') && current.precipitation <= 3)) {
-                    conditional = 'Halo around the moon. It will rain later.'
+                    conditional = {name: 'Halo around the moon', effect: 'It will rain later.'}
                 }
             } 
             
             if (storm === true) {
-                conditional = 'Tall, dark clouds to the west. There is a storm coming.'
+                conditional = {name: 'Tall dark clouds to the west', effect: 'There is a storm coming.'}
             }
             
             if (rain === undefined && storm === undefined) {
                 if ((current.sun.watches.includes('Sunset')) || (next.sun.watches.includes('Sunset'))) {
-                    conditional = 'Red skies at night. The skies will be clear later.'
+                    conditional = {name: 'Red skies at night', effect: 'The skies will be clear later.'}
                 }
             }
                     
@@ -481,25 +481,25 @@ var watchNames = ['Dawn', 'Midday', 'Evening', 'Dusk', 'First night', 'Second ni
     
 var weatherEffects = {
     precipitation: [
-        {level: 'Clear skies', effect: '+1 temperature (already calculated).'}, 
-        {level: 'Wispy clouds', effect: '+1 temperature (already calculated).'},
+        {level: 'Clear skies', effect: '+1 temperature.'}, 
+        {level: 'Wispy clouds', effect: '+1 temperature.'},
         {level: 'Thick, cottony clouds', effect: 'No effect.'},
         {level: 'Low-hanging, grey clouds', effect: 'No effect.'},
-        {level: 'Light rain', effect: 'Visual range reduced to 75%. Characters soaked after 3 watches (-1 temp).'},
-        {level: 'Medium rain', effect: 'Visual range reduced to 50%. Characters soaked after 2 watches (-1 temp). Disadvantage to Perception.'},
-        {level: 'Heavy rain and dark clouds', effect: 'Visual range reduced to 25%. Characters soaked after 1 watch (-1 temp). Disadvantage to Perception.'},
-        {level: 'Storm', effect: 'Visual range reduced to 25%. Characters instantly soaked (-1 temp). Disadvantage to Perception.'},
-        {level: 'Thunderstorm', effect: 'Visual range reduced to 25%. Characters instantly soaked (-1 temp). Disadvantage to Perception. Each hour outside, 1% chance that lightning hits party. 10d10 lightning dmg, random target, lasts 1 minute. +25% chance for each level of elevation.'}],
+        {level: 'Light rain', effect: 'Visual range reduced to 75%. Characters soaked after 3 watches.'},
+        {level: 'Medium rain', effect: 'Visual range reduced to 50%. Characters soaked after 2 watches. Disadvantage to Perception.'},
+        {level: 'Heavy rain and dark clouds', effect: 'Visual range reduced to 25%. Characters soaked after 1 watch. Disadvantage to Perception.'},
+        {level: 'Storm', effect: 'Visual range reduced to 25%. Characters instantly soaked. Disadvantage to Perception.'},
+        {level: 'Thunderstorm', effect: 'Visual range reduced to 25%. Characters instantly soaked. Disadvantage to Perception. Each hour outside, 1% chance that lightning hits party. 10d10 lightning dmg, random target, lasts 1 minute. +25% chance for each level of elevation.'}],
     wind: [
        {level: 'Calm', effect: 'Smoke rises vertically.'},
        {level: 'Fresh breeze', effect: 'Wind felt on face, leaves rustle.'},
        {level: 'Moderate breeze', effect: 'Small tree branches move, tall grass sways.'},
        {level: 'Strong breeze', effect: 'Large branches move, tents and other loose items shake.'},
-       {level: 'Near gale', effect: '-1 temperature (already calculated). Whole trees in motion. Inconvenience felt walking against wind.'}, 
-       {level: 'Fresh gale', effect: '-1 temperature (already calculated). Twigs break off trees.'},
-       {level: 'Strong gale', effect: '-1 temperature (already calculated). Disadvantage to ranged attacks.'},
-       {level: 'Storm', effect: '-1 temperature (already calculated). Disadvantage to ranged attacks. Movement speed reduced by 25%.'},
-       {level: 'Hurricane', effect: '-1 temperature (already calculated). Disadvantage to ranged attacks. Movement speed reduced by 25%. In forest, 25% chance each round to be hit by flying branch. DC 15 Dex save or 1d6 dmg. In open terrain, DC 12 Str save or be knocked prone when trying to move.'}
+       {level: 'Near gale', effect: 'Temperature -1. Whole trees in motion. Inconvenience felt walking against wind.'}, 
+       {level: 'Fresh gale', effect: 'Temperature -1. Twigs break off trees.'},
+       {level: 'Strong gale', effect: 'Temperature -1. Disadvantage to ranged attacks.'},
+       {level: 'Storm', effect: 'Temperature -1. Disadvantage to ranged attacks. Movement speed reduced by 25%.'},
+       {level: 'Hurricane', effect: 'Temperature -1. Disadvantage to ranged attacks. Movement speed reduced by 25%. In forest, 25% chance each round to be hit by flying branch. DC 15 Dex save or 1d6 dmg. In open terrain, DC 12 Str save or be knocked prone when trying to move.'}
     ]
 }
 
@@ -1047,14 +1047,25 @@ var UIController = (function() {
                 
                 function updateBackground (el, indx, type) {
                     var div = document.getElementById(type + index)
-                    var string = 'precipitation'
-                    var oldClass;
+                    var classes = div.classList;
+                    var nameRegEx = /^precipitation[0-9]+/
                     
                     
-    
+                    classes.forEach(function(className, classIndex) {
+                        var classToRemove = nameRegEx.exec(className)
+                        if (classToRemove !== null) {
+                            console.log(classToRemove[0])
+                            div.classList.remove(classToRemove[0])
+                        }
+                        
+                            
+                    })
                 }
                 
                 updateBackground(element, index, 'daylight')
+                updateBackground(element, index, 'encounter')
+                updateBackground(element, index, 'weather')
+                updateBackground(element, index, 'temperature')
                 
                 document.getElementById('daylight' + index).classList.add('precipitation' + element.precipitation)
                 document.getElementById('encounter' + index).classList.add('precipitation' + element.precipitation)
@@ -1193,8 +1204,12 @@ var UIController = (function() {
             var conditional = logicController.conditionals(array)
             if (conditional !== undefined) {   
                 var lore = document.createElement('p');
-                lore.innerHTML = conditional
-                weather.appendChild(lore)
+                lore.innerHTML = conditional.name;
+                var loreEffect = document.createElement('p');
+                loreEffect.innerHTML = conditional.effect;
+                loreEffect.classList.add(DOMstrings.small);
+                lore.appendChild(loreEffect);
+                weather.appendChild(lore);
             }
                 
             }

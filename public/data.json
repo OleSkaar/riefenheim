@@ -35952,5 +35952,2925 @@
     "encounter": {
       "text": "No encounter"
     }
+  },
+  {
+    "watch": "Dawn",
+    "location": "Marsh",
+    "day": 19,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 3,
+    "wind": 3,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.133333333333315,
+      "remainingHours": 7,
+      "watches": [
+        "Sunrise",
+        "EasterlySun",
+        "EasterlySun",
+        "EasterlySun"
+      ]
+    },
+    "moon": "Full",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Midday",
+    "location": "Marsh",
+    "day": 19,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 4,
+    "wind": 1,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.133333333333315,
+      "remainingHours": 3,
+      "watches": [
+        "EasterlySun",
+        "SolarNoon",
+        "WesterlySun",
+        "WesterlySun"
+      ]
+    },
+    "moon": "Waning Gibbous",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Evening",
+    "location": "Marsh",
+    "day": 19,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 2,
+    "wind": 1,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.133333333333315,
+      "remainingHours": 0,
+      "watches": [
+        "WesterlySun",
+        "WesterlySun",
+        "Sunset",
+        "Night"
+      ]
+    },
+    "moon": "Waning Gibbous",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Dusk",
+    "location": "Marsh",
+    "day": 19,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 0,
+    "wind": 1,
+    "temperature": 2,
+    "fog": 1,
+    "sun": {
+      "totalHours": 11.133333333333315,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Waning Gibbous",
+    "encounter": {
+      "time": 1,
+      "creature": "6 nothics",
+      "type": "Encounter",
+      "text": "Hunting for food (advantage to Perception)",
+      "distance": "450 feet away",
+      "direction": "South",
+      "heading": "South-west"
+    }
+  },
+  {
+    "watch": "First night",
+    "location": "Marsh",
+    "day": 19,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 2,
+    "wind": 1,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.133333333333315,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Waning Gibbous",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Second night",
+    "location": "Marsh",
+    "day": 19,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 2,
+    "wind": 0,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.133333333333315,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Waning Gibbous",
+    "encounter": {
+      "time": 4,
+      "creature": "Green hag",
+      "type": "Encounter",
+      "text": "Returning to lair with dead 7 lizardmen",
+      "distance": "250 feet away",
+      "direction": "North",
+      "heading": "North-west"
+    }
+  },
+  {
+    "watch": "Dawn",
+    "location": "Marsh",
+    "day": 20,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 2,
+    "wind": 0,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.199999999999982,
+      "remainingHours": 7,
+      "watches": [
+        "Sunrise",
+        "EasterlySun",
+        "EasterlySun",
+        "EasterlySun"
+      ]
+    },
+    "moon": "Waning Gibbous",
+    "encounter": {
+      "time": 2,
+      "creature": "3d6 lizardmen",
+      "type": "Spoor",
+      "text": "Many footprints of humanoid feet that have toe webbing and long claws"
+    }
+  },
+  {
+    "watch": "Midday",
+    "location": "Marsh",
+    "day": 20,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 2,
+    "wind": 0,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.199999999999982,
+      "remainingHours": 3,
+      "watches": [
+        "EasterlySun",
+        "SolarNoon",
+        "WesterlySun",
+        "WesterlySun"
+      ]
+    },
+    "moon": "Waning Gibbous",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Evening",
+    "location": "Marsh",
+    "day": 20,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 2,
+    "wind": 0,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.199999999999982,
+      "remainingHours": 0,
+      "watches": [
+        "WesterlySun",
+        "WesterlySun",
+        "Sunset",
+        "Night"
+      ]
+    },
+    "moon": "Waning Gibbous",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Dusk",
+    "location": "Marsh",
+    "day": 20,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 1,
+    "wind": 0,
+    "temperature": 2,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.199999999999982,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Waning Gibbous",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "First night",
+    "location": "Marsh",
+    "day": 20,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 1,
+    "wind": 0,
+    "temperature": 2,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.199999999999982,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Waning Gibbous",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Second night",
+    "location": "Marsh",
+    "day": 20,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 2,
+    "wind": 0,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.199999999999982,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Waning Gibbous",
+    "encounter": {
+      "time": 1,
+      "creature": "11 lizardmen",
+      "type": "Encounter",
+      "text": "Chasing Wyvern (at 50% HP)",
+      "distance": "300 feet away",
+      "direction": "North-east",
+      "heading": "South-east"
+    }
+  },
+  {
+    "watch": "Dawn",
+    "location": "Marsh",
+    "day": 21,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 2,
+    "wind": 0,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.266666666666648,
+      "remainingHours": 7,
+      "watches": [
+        "Sunrise",
+        "EasterlySun",
+        "EasterlySun",
+        "EasterlySun"
+      ]
+    },
+    "moon": "Waning Gibbous",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Midday",
+    "location": "Marsh",
+    "day": 21,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 2,
+    "wind": 2,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.266666666666648,
+      "remainingHours": 3,
+      "watches": [
+        "EasterlySun",
+        "SolarNoon",
+        "WesterlySun",
+        "WesterlySun"
+      ]
+    },
+    "moon": "Waning Gibbous",
+    "encounter": {
+      "time": 2,
+      "creature": "Green hag",
+      "type": "Spoor",
+      "text": "A coven of three hags (this, sea hag & night hag) dwelling in a thatched hut. 50% chance for each hag to be present. 1 table F item (p. 146 DMG)"
+    }
+  },
+  {
+    "watch": "Evening",
+    "location": "Marsh",
+    "day": 21,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 3,
+    "wind": 1,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.266666666666648,
+      "remainingHours": 0,
+      "watches": [
+        "WesterlySun",
+        "WesterlySun",
+        "Sunset",
+        "Night"
+      ]
+    },
+    "moon": "Waning Gibbous",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Dusk",
+    "location": "Marsh",
+    "day": 21,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 5,
+    "wind": 1,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.266666666666648,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Waning Gibbous",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "First night",
+    "location": "Marsh",
+    "day": 21,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 6,
+    "wind": 1,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.266666666666648,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Waning Gibbous",
+    "encounter": {
+      "time": 3,
+      "creature": "1 giant constrictors",
+      "type": "Encounter",
+      "text": "Hunting for food (advantage to Perception)",
+      "distance": "350 feet away",
+      "direction": "North-west",
+      "heading": "North-east"
+    }
+  },
+  {
+    "watch": "Second night",
+    "location": "Marsh",
+    "day": 21,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 6,
+    "wind": 1,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.266666666666648,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Waning Gibbous",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Dawn",
+    "location": "Marsh",
+    "day": 22,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 6,
+    "wind": 1,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.333333333333314,
+      "remainingHours": 7,
+      "watches": [
+        "Sunrise",
+        "EasterlySun",
+        "EasterlySun",
+        "EasterlySun"
+      ]
+    },
+    "moon": "Waning Gibbous",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Midday",
+    "location": "Marsh",
+    "day": 22,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 4,
+    "wind": 1,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.333333333333314,
+      "remainingHours": 3,
+      "watches": [
+        "EasterlySun",
+        "SolarNoon",
+        "WesterlySun",
+        "WesterlySun"
+      ]
+    },
+    "moon": "Waning Quarter",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Evening",
+    "location": "Marsh",
+    "day": 22,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 4,
+    "wind": 2,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.333333333333314,
+      "remainingHours": 0,
+      "watches": [
+        "WesterlySun",
+        "WesterlySun",
+        "Sunset",
+        "Night"
+      ]
+    },
+    "moon": "Waning Quarter",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Dusk",
+    "location": "Marsh",
+    "day": 22,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 2,
+    "wind": 2,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.333333333333314,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Waning Quarter",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "First night",
+    "location": "Marsh",
+    "day": 22,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 4,
+    "wind": 2,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.333333333333314,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Waning Quarter",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Second night",
+    "location": "Marsh",
+    "day": 22,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 4,
+    "wind": 2,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.333333333333314,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Waning Quarter",
+    "encounter": {
+      "time": 4,
+      "creature": "7 lizardmen and a shaman",
+      "type": "Encounter",
+      "text": "Just passing by. Friendly.",
+      "distance": "500 feet away",
+      "direction": "West",
+      "heading": "North-west"
+    }
+  },
+  {
+    "watch": "Dawn",
+    "location": "Marsh",
+    "day": 23,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 5,
+    "wind": 2,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.39999999999998,
+      "remainingHours": 7,
+      "watches": [
+        "Sunrise",
+        "EasterlySun",
+        "EasterlySun",
+        "EasterlySun"
+      ]
+    },
+    "moon": "Waning Quarter",
+    "encounter": {
+      "time": 2,
+      "creature": "1d6 will-o-wisps (DC 14 Wisdom not to be compelled to follow, new save at end of turn)",
+      "type": "Spoor",
+      "text": "None"
+    }
+  },
+  {
+    "watch": "Midday",
+    "location": "Marsh",
+    "day": 23,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 5,
+    "wind": 1,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.39999999999998,
+      "remainingHours": 3,
+      "watches": [
+        "EasterlySun",
+        "SolarNoon",
+        "WesterlySun",
+        "WesterlySun"
+      ]
+    },
+    "moon": "Waning Quarter",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Evening",
+    "location": "Marsh",
+    "day": 23,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 5,
+    "wind": 1,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.39999999999998,
+      "remainingHours": 0,
+      "watches": [
+        "WesterlySun",
+        "WesterlySun",
+        "Sunset",
+        "Night"
+      ]
+    },
+    "moon": "Waning Quarter",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Dusk",
+    "location": "Marsh",
+    "day": 23,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 5,
+    "wind": 1,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.39999999999998,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Waning Quarter",
+    "encounter": {
+      "time": 4,
+      "creature": "12 lizardmen",
+      "type": "Encounter",
+      "text": "Fighting Green hag",
+      "distance": "550 feet away",
+      "direction": "South-west",
+      "heading": "West"
+    }
+  },
+  {
+    "watch": "First night",
+    "location": "Marsh",
+    "day": 23,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 4,
+    "wind": 0,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.39999999999998,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Waning Quarter",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Second night",
+    "location": "Marsh",
+    "day": 23,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 4,
+    "wind": 1,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.39999999999998,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Waning Quarter",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Dawn",
+    "location": "Marsh",
+    "day": 24,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 5,
+    "wind": 1,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.466666666666647,
+      "remainingHours": 7,
+      "watches": [
+        "Sunrise",
+        "EasterlySun",
+        "EasterlySun",
+        "EasterlySun"
+      ]
+    },
+    "moon": "Waning Quarter",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Midday",
+    "location": "Marsh",
+    "day": 24,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 5,
+    "wind": 1,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.466666666666647,
+      "remainingHours": 3,
+      "watches": [
+        "EasterlySun",
+        "SolarNoon",
+        "WesterlySun",
+        "WesterlySun"
+      ]
+    },
+    "moon": "Waning Quarter",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Evening",
+    "location": "Marsh",
+    "day": 24,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 3,
+    "wind": 1,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.466666666666647,
+      "remainingHours": 0,
+      "watches": [
+        "WesterlySun",
+        "WesterlySun",
+        "Sunset",
+        "Night"
+      ]
+    },
+    "moon": "Waning Quarter",
+    "encounter": {
+      "time": 3,
+      "creature": "6 swarms of poisonous snakes",
+      "type": "Encounter",
+      "text": "Fighting 1 will-o-wisps (DC 14 Wisdom not to be compelled to follow, new save at end of turn)",
+      "distance": "450 feet away",
+      "direction": "South-west",
+      "heading": "North-west"
+    }
+  },
+  {
+    "watch": "Dusk",
+    "location": "Marsh",
+    "day": 24,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 5,
+    "wind": 0,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.466666666666647,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Waning Quarter",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "First night",
+    "location": "Marsh",
+    "day": 24,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 4,
+    "wind": 0,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.466666666666647,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Waning Quarter",
+    "encounter": {
+      "time": 4,
+      "creature": "2d4 giant toads",
+      "type": "Spoor",
+      "text": "Patches of flattened grass"
+    }
+  },
+  {
+    "watch": "Second night",
+    "location": "Marsh",
+    "day": 24,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 2,
+    "wind": 0,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.466666666666647,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Waning Quarter",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Dawn",
+    "location": "Marsh",
+    "day": 25,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 2,
+    "wind": 0,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.533333333333314,
+      "remainingHours": 8,
+      "watches": [
+        "Sunrise",
+        "EasterlySun",
+        "EasterlySun",
+        "EasterlySun"
+      ]
+    },
+    "moon": "Waning Quarter",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Midday",
+    "location": "Marsh",
+    "day": 25,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 2,
+    "wind": 0,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.533333333333314,
+      "remainingHours": 4,
+      "watches": [
+        "EasterlySun",
+        "EasterlySun",
+        "SolarNoon",
+        "WesterlySun"
+      ]
+    },
+    "moon": "Waning Crescent",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Evening",
+    "location": "Marsh",
+    "day": 25,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 3,
+    "wind": 0,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.533333333333314,
+      "remainingHours": 0,
+      "watches": [
+        "WesterlySun",
+        "WesterlySun",
+        "WesterlySun",
+        "Sunset"
+      ]
+    },
+    "moon": "Waning Crescent",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Dusk",
+    "location": "Marsh",
+    "day": 25,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 4,
+    "wind": 0,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.533333333333314,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Waning Crescent",
+    "encounter": {
+      "time": 4,
+      "creature": "7 lizardmen",
+      "type": "Encounter",
+      "text": "Returning to lair with treasure equal to xp value",
+      "distance": "250 feet away",
+      "direction": "East",
+      "heading": "North-east"
+    }
+  },
+  {
+    "watch": "First night",
+    "location": "Marsh",
+    "day": 25,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 4,
+    "wind": 0,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.533333333333314,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Waning Crescent",
+    "encounter": {
+      "time": 3,
+      "creature": "7 lizardmen and a shaman",
+      "type": "Encounter",
+      "text": "Sleeping in lair",
+      "distance": "450 feet away",
+      "direction": "West",
+      "heading": "South-east"
+    }
+  },
+  {
+    "watch": "Second night",
+    "location": "Marsh",
+    "day": 25,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 4,
+    "wind": 0,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.533333333333314,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Waning Crescent",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Dawn",
+    "location": "Marsh",
+    "day": 26,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 4,
+    "wind": 0,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.59999999999998,
+      "remainingHours": 8,
+      "watches": [
+        "Sunrise",
+        "EasterlySun",
+        "EasterlySun",
+        "EasterlySun"
+      ]
+    },
+    "moon": "Waning Crescent",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Midday",
+    "location": "Marsh",
+    "day": 26,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 6,
+    "wind": 0,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.59999999999998,
+      "remainingHours": 4,
+      "watches": [
+        "EasterlySun",
+        "EasterlySun",
+        "SolarNoon",
+        "WesterlySun"
+      ]
+    },
+    "moon": "Waning Crescent",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Evening",
+    "location": "Marsh",
+    "day": 26,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 5,
+    "wind": 0,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.59999999999998,
+      "remainingHours": 0,
+      "watches": [
+        "WesterlySun",
+        "WesterlySun",
+        "WesterlySun",
+        "Sunset"
+      ]
+    },
+    "moon": "Waning Crescent",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Dusk",
+    "location": "Marsh",
+    "day": 26,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 5,
+    "wind": 0,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.59999999999998,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Waning Crescent",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "First night",
+    "location": "Marsh",
+    "day": 26,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 5,
+    "wind": 2,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.59999999999998,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Waning Crescent",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Second night",
+    "location": "Marsh",
+    "day": 26,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 5,
+    "wind": 2,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.59999999999998,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Waning Crescent",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Dawn",
+    "location": "Marsh",
+    "day": 27,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 5,
+    "wind": 2,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.666666666666647,
+      "remainingHours": 8,
+      "watches": [
+        "Sunrise",
+        "EasterlySun",
+        "EasterlySun",
+        "EasterlySun"
+      ]
+    },
+    "moon": "Waning Crescent",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Midday",
+    "location": "Marsh",
+    "day": 27,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 5,
+    "wind": 2,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.666666666666647,
+      "remainingHours": 4,
+      "watches": [
+        "EasterlySun",
+        "EasterlySun",
+        "SolarNoon",
+        "WesterlySun"
+      ]
+    },
+    "moon": "Waning Crescent",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Evening",
+    "location": "Marsh",
+    "day": 27,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 5,
+    "wind": 2,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.666666666666647,
+      "remainingHours": 0,
+      "watches": [
+        "WesterlySun",
+        "WesterlySun",
+        "WesterlySun",
+        "Sunset"
+      ]
+    },
+    "moon": "Waning Crescent",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Dusk",
+    "location": "Marsh",
+    "day": 27,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 4,
+    "wind": 3,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.666666666666647,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Waning Crescent",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "First night",
+    "location": "Marsh",
+    "day": 27,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 4,
+    "wind": 2,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.666666666666647,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Waning Crescent",
+    "encounter": {
+      "time": 4,
+      "creature": "3d6 lizardmen",
+      "type": "Spoor",
+      "text": "Many footprints of humanoid feet that have toe webbing and long claws"
+    }
+  },
+  {
+    "watch": "Second night",
+    "location": "Marsh",
+    "day": 27,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 4,
+    "wind": 1,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.666666666666647,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Waning Crescent",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Dawn",
+    "location": "Marsh",
+    "day": 28,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 5,
+    "wind": 2,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.733333333333313,
+      "remainingHours": 8,
+      "watches": [
+        "Sunrise",
+        "EasterlySun",
+        "EasterlySun",
+        "EasterlySun"
+      ]
+    },
+    "moon": "Waning Crescent",
+    "encounter": {
+      "time": 4,
+      "creature": "Troll (only found outside during night)",
+      "type": "Spoor",
+      "text": "Large felled trees"
+    }
+  },
+  {
+    "watch": "Midday",
+    "location": "Marsh",
+    "day": 28,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 5,
+    "wind": 1,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.733333333333313,
+      "remainingHours": 4,
+      "watches": [
+        "EasterlySun",
+        "EasterlySun",
+        "SolarNoon",
+        "WesterlySun"
+      ]
+    },
+    "moon": "Old",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Evening",
+    "location": "Marsh",
+    "day": 28,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 3,
+    "wind": 0,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.733333333333313,
+      "remainingHours": 0,
+      "watches": [
+        "WesterlySun",
+        "WesterlySun",
+        "WesterlySun",
+        "Sunset"
+      ]
+    },
+    "moon": "Old",
+    "encounter": {
+      "time": 2,
+      "creature": "1d6 will-o-wisps (DC 14 Wisdom not to be compelled to follow, new save at end of turn)",
+      "type": "Spoor",
+      "text": "Glowing lantern-like lights in the distance (DC 14 Wisdom not to be compelled to follow, new save at end of turn)"
+    }
+  },
+  {
+    "watch": "Dusk",
+    "location": "Marsh",
+    "day": 28,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 3,
+    "wind": 2,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.733333333333313,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Old",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "First night",
+    "location": "Marsh",
+    "day": 28,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 3,
+    "wind": 2,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.733333333333313,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Old",
+    "encounter": {
+      "time": 4,
+      "creature": "Troll (only found outside during night)",
+      "type": "Encounter",
+      "text": "Returning to lair with treasure equal to xp value",
+      "distance": "350 feet away",
+      "direction": "North",
+      "heading": "East"
+    }
+  },
+  {
+    "watch": "Second night",
+    "location": "Marsh",
+    "day": 28,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 3,
+    "wind": 2,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.733333333333313,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Old",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Dawn",
+    "location": "Marsh",
+    "day": 29,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 3,
+    "wind": 2,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.79999999999998,
+      "remainingHours": 8,
+      "watches": [
+        "Sunrise",
+        "EasterlySun",
+        "EasterlySun",
+        "EasterlySun"
+      ]
+    },
+    "moon": "Old",
+    "encounter": {
+      "time": 1,
+      "creature": "Troll (only found outside during night)",
+      "type": "Encounter",
+      "text": "Hunting for food (advantage to Perception)",
+      "distance": "450 feet away",
+      "direction": "West",
+      "heading": "North-west"
+    }
+  },
+  {
+    "watch": "Midday",
+    "location": "Marsh",
+    "day": 29,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 5,
+    "wind": 2,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.79999999999998,
+      "remainingHours": 4,
+      "watches": [
+        "EasterlySun",
+        "EasterlySun",
+        "SolarNoon",
+        "WesterlySun"
+      ]
+    },
+    "moon": "Old",
+    "encounter": {
+      "time": 4,
+      "creature": "Night hag",
+      "type": "Spoor",
+      "text": "Nightmare haunting during sleep (p. 178 MM)"
+    }
+  },
+  {
+    "watch": "Evening",
+    "location": "Marsh",
+    "day": 29,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 5,
+    "wind": 1,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.79999999999998,
+      "remainingHours": 0,
+      "watches": [
+        "WesterlySun",
+        "WesterlySun",
+        "WesterlySun",
+        "Sunset"
+      ]
+    },
+    "moon": "Old",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Dusk",
+    "location": "Marsh",
+    "day": 29,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 5,
+    "wind": 1,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.79999999999998,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Old",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "First night",
+    "location": "Marsh",
+    "day": 29,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 6,
+    "wind": 1,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.79999999999998,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Old",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Second night",
+    "location": "Marsh",
+    "day": 29,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 6,
+    "wind": 1,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.79999999999998,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Old",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Dawn",
+    "location": "Marsh",
+    "day": 30,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 6,
+    "wind": 2,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.866666666666646,
+      "remainingHours": 8,
+      "watches": [
+        "Sunrise",
+        "EasterlySun",
+        "EasterlySun",
+        "EasterlySun"
+      ]
+    },
+    "moon": "Old",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Midday",
+    "location": "Marsh",
+    "day": 30,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 6,
+    "wind": 3,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.866666666666646,
+      "remainingHours": 4,
+      "watches": [
+        "EasterlySun",
+        "EasterlySun",
+        "SolarNoon",
+        "WesterlySun"
+      ]
+    },
+    "moon": "Old",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Evening",
+    "location": "Marsh",
+    "day": 30,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 5,
+    "wind": 3,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.866666666666646,
+      "remainingHours": 0,
+      "watches": [
+        "WesterlySun",
+        "WesterlySun",
+        "WesterlySun",
+        "Sunset"
+      ]
+    },
+    "moon": "Old",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Dusk",
+    "location": "Marsh",
+    "day": 30,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 5,
+    "wind": 3,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.866666666666646,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Old",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "First night",
+    "location": "Marsh",
+    "day": 30,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 3,
+    "wind": 4,
+    "temperature": 0,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.866666666666646,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Old",
+    "encounter": {
+      "time": 3,
+      "creature": "5 will-o-wisps (DC 14 Wisdom not to be compelled to follow, new save at end of turn)",
+      "type": "Encounter",
+      "text": "Returning to lair with treasure equal to xp value",
+      "distance": "550 feet away",
+      "direction": "South",
+      "heading": "South-east"
+    }
+  },
+  {
+    "watch": "Second night",
+    "location": "Marsh",
+    "day": 30,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 3,
+    "wind": 4,
+    "temperature": 0,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.866666666666646,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Old",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Dawn",
+    "location": "Marsh",
+    "day": 1,
+    "month": 4,
+    "year": 1353,
+    "precipitation": 3,
+    "wind": 4,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.933333333333312,
+      "remainingHours": 8,
+      "watches": [
+        "Sunrise",
+        "EasterlySun",
+        "EasterlySun",
+        "EasterlySun"
+      ]
+    },
+    "moon": "Old",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Midday",
+    "location": "Marsh",
+    "day": 1,
+    "month": 4,
+    "year": 1353,
+    "precipitation": 3,
+    "wind": 4,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.933333333333312,
+      "remainingHours": 4,
+      "watches": [
+        "EasterlySun",
+        "EasterlySun",
+        "SolarNoon",
+        "WesterlySun"
+      ]
+    },
+    "moon": "New",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Evening",
+    "location": "Marsh",
+    "day": 1,
+    "month": 4,
+    "year": 1353,
+    "precipitation": 3,
+    "wind": 4,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.933333333333312,
+      "remainingHours": 0,
+      "watches": [
+        "WesterlySun",
+        "WesterlySun",
+        "WesterlySun",
+        "Sunset"
+      ]
+    },
+    "moon": "New",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Dusk",
+    "location": "Marsh",
+    "day": 1,
+    "month": 4,
+    "year": 1353,
+    "precipitation": 4,
+    "wind": 2,
+    "temperature": 2,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.933333333333312,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "New",
+    "encounter": {
+      "time": 1,
+      "creature": "Troll (only found outside during night)",
+      "type": "Spoor",
+      "text": "A large, green severed arm"
+    }
+  },
+  {
+    "watch": "First night",
+    "location": "Marsh",
+    "day": 1,
+    "month": 4,
+    "year": 1353,
+    "precipitation": 4,
+    "wind": 4,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.933333333333312,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "New",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Second night",
+    "location": "Marsh",
+    "day": 1,
+    "month": 4,
+    "year": 1353,
+    "precipitation": 4,
+    "wind": 6,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.933333333333312,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "New",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Dawn",
+    "location": "Marsh",
+    "day": 2,
+    "month": 4,
+    "year": 1353,
+    "precipitation": 2,
+    "wind": 8,
+    "temperature": 1,
+    "fog": 2,
+    "sun": {
+      "totalHours": 11.999999999999979,
+      "remainingHours": 8,
+      "watches": [
+        "Sunrise",
+        "EasterlySun",
+        "EasterlySun",
+        "EasterlySun"
+      ]
+    },
+    "moon": "New",
+    "encounter": {
+      "time": 3,
+      "creature": "1d6 will-o-wisps (DC 14 Wisdom not to be compelled to follow, new save at end of turn)",
+      "type": "Spoor",
+      "text": "A field of tar, acting like quicksand (p. 110 DMG)"
+    }
+  },
+  {
+    "watch": "Midday",
+    "location": "Marsh",
+    "day": 2,
+    "month": 4,
+    "year": 1353,
+    "precipitation": 2,
+    "wind": 7,
+    "temperature": 1,
+    "fog": 1,
+    "sun": {
+      "totalHours": 11.999999999999979,
+      "remainingHours": 4,
+      "watches": [
+        "EasterlySun",
+        "EasterlySun",
+        "SolarNoon",
+        "WesterlySun"
+      ]
+    },
+    "moon": "New",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Evening",
+    "location": "Marsh",
+    "day": 2,
+    "month": 4,
+    "year": 1353,
+    "precipitation": 2,
+    "wind": 7,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.999999999999979,
+      "remainingHours": 0,
+      "watches": [
+        "WesterlySun",
+        "WesterlySun",
+        "WesterlySun",
+        "Sunset"
+      ]
+    },
+    "moon": "New",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Dusk",
+    "location": "Marsh",
+    "day": 2,
+    "month": 4,
+    "year": 1353,
+    "precipitation": 2,
+    "wind": 5,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.999999999999979,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "New",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "First night",
+    "location": "Marsh",
+    "day": 2,
+    "month": 4,
+    "year": 1353,
+    "precipitation": 4,
+    "wind": 5,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.999999999999979,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "New",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Second night",
+    "location": "Marsh",
+    "day": 2,
+    "month": 4,
+    "year": 1353,
+    "precipitation": 6,
+    "wind": 3,
+    "temperature": 2,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.999999999999979,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "New",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Dawn",
+    "location": "Marsh",
+    "day": 3,
+    "month": 4,
+    "year": 1353,
+    "precipitation": 5,
+    "wind": 5,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 12.066666666666645,
+      "remainingHours": 8,
+      "watches": [
+        "Sunrise",
+        "EasterlySun",
+        "EasterlySun",
+        "EasterlySun"
+      ]
+    },
+    "moon": "New",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Midday",
+    "location": "Marsh",
+    "day": 3,
+    "month": 4,
+    "year": 1353,
+    "precipitation": 5,
+    "wind": 3,
+    "temperature": 2,
+    "fog": 0,
+    "sun": {
+      "totalHours": 12.066666666666645,
+      "remainingHours": 4,
+      "watches": [
+        "EasterlySun",
+        "EasterlySun",
+        "SolarNoon",
+        "WesterlySun"
+      ]
+    },
+    "moon": "New",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Evening",
+    "location": "Marsh",
+    "day": 3,
+    "month": 4,
+    "year": 1353,
+    "precipitation": 5,
+    "wind": 4,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 12.066666666666645,
+      "remainingHours": 0,
+      "watches": [
+        "WesterlySun",
+        "WesterlySun",
+        "WesterlySun",
+        "Sunset"
+      ]
+    },
+    "moon": "New",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Dusk",
+    "location": "Marsh",
+    "day": 3,
+    "month": 4,
+    "year": 1353,
+    "precipitation": 4,
+    "wind": 3,
+    "temperature": 2,
+    "fog": 0,
+    "sun": {
+      "totalHours": 12.066666666666645,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "New",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "First night",
+    "location": "Marsh",
+    "day": 3,
+    "month": 4,
+    "year": 1353,
+    "precipitation": 4,
+    "wind": 3,
+    "temperature": 2,
+    "fog": 0,
+    "sun": {
+      "totalHours": 12.066666666666645,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "New",
+    "encounter": {
+      "time": 1,
+      "creature": "6 giant toads",
+      "type": "Encounter",
+      "text": "Hunting for food (advantage to Perception)",
+      "distance": "250 feet away",
+      "direction": "West",
+      "heading": "East"
+    }
+  },
+  {
+    "watch": "Second night",
+    "location": "Marsh",
+    "day": 3,
+    "month": 4,
+    "year": 1353,
+    "precipitation": 4,
+    "wind": 1,
+    "temperature": 2,
+    "fog": 0,
+    "sun": {
+      "totalHours": 12.066666666666645,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "New",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Dawn",
+    "location": "Marsh",
+    "day": 4,
+    "month": 4,
+    "year": 1353,
+    "precipitation": 3,
+    "wind": 1,
+    "temperature": 2,
+    "fog": 2,
+    "sun": {
+      "totalHours": 12.133333333333312,
+      "remainingHours": 8,
+      "watches": [
+        "Sunrise",
+        "EasterlySun",
+        "EasterlySun",
+        "EasterlySun"
+      ]
+    },
+    "moon": "New",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Midday",
+    "location": "Marsh",
+    "day": 4,
+    "month": 4,
+    "year": 1353,
+    "precipitation": 3,
+    "wind": 2,
+    "temperature": 2,
+    "fog": 1,
+    "sun": {
+      "totalHours": 12.133333333333312,
+      "remainingHours": 4,
+      "watches": [
+        "EasterlySun",
+        "EasterlySun",
+        "SolarNoon",
+        "WesterlySun"
+      ]
+    },
+    "moon": "Young",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Evening",
+    "location": "Marsh",
+    "day": 4,
+    "month": 4,
+    "year": 1353,
+    "precipitation": 1,
+    "wind": 2,
+    "temperature": 3,
+    "fog": 0,
+    "sun": {
+      "totalHours": 12.133333333333312,
+      "remainingHours": 0,
+      "watches": [
+        "WesterlySun",
+        "WesterlySun",
+        "WesterlySun",
+        "Sunset"
+      ]
+    },
+    "moon": "Young",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Dusk",
+    "location": "Marsh",
+    "day": 4,
+    "month": 4,
+    "year": 1353,
+    "precipitation": 2,
+    "wind": 4,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 12.133333333333312,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Young",
+    "encounter": {
+      "time": 3,
+      "creature": "2 giant toads",
+      "type": "Encounter",
+      "text": "Hunting for food (advantage to Perception)",
+      "distance": "500 feet away",
+      "direction": "North",
+      "heading": "North"
+    }
+  },
+  {
+    "watch": "First night",
+    "location": "Marsh",
+    "day": 4,
+    "month": 4,
+    "year": 1353,
+    "precipitation": 2,
+    "wind": 4,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 12.133333333333312,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Young",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Second night",
+    "location": "Marsh",
+    "day": 4,
+    "month": 4,
+    "year": 1353,
+    "precipitation": 4,
+    "wind": 2,
+    "temperature": 2,
+    "fog": 0,
+    "sun": {
+      "totalHours": 12.133333333333312,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Young",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Dawn",
+    "location": "Marsh",
+    "day": 5,
+    "month": 4,
+    "year": 1353,
+    "precipitation": 4,
+    "wind": 3,
+    "temperature": 2,
+    "fog": 0,
+    "sun": {
+      "totalHours": 12.199999999999978,
+      "remainingHours": 8,
+      "watches": [
+        "Sunrise",
+        "EasterlySun",
+        "EasterlySun",
+        "EasterlySun"
+      ]
+    },
+    "moon": "Young",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Midday",
+    "location": "Marsh",
+    "day": 5,
+    "month": 4,
+    "year": 1353,
+    "precipitation": 5,
+    "wind": 1,
+    "temperature": 2,
+    "fog": 0,
+    "sun": {
+      "totalHours": 12.199999999999978,
+      "remainingHours": 4,
+      "watches": [
+        "EasterlySun",
+        "EasterlySun",
+        "SolarNoon",
+        "WesterlySun"
+      ]
+    },
+    "moon": "Young",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Evening",
+    "location": "Marsh",
+    "day": 5,
+    "month": 4,
+    "year": 1353,
+    "precipitation": 7,
+    "wind": 1,
+    "temperature": 2,
+    "fog": 0,
+    "sun": {
+      "totalHours": 12.199999999999978,
+      "remainingHours": 0,
+      "watches": [
+        "WesterlySun",
+        "WesterlySun",
+        "WesterlySun",
+        "Sunset"
+      ]
+    },
+    "moon": "Young",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Dusk",
+    "location": "Marsh",
+    "day": 5,
+    "month": 4,
+    "year": 1353,
+    "precipitation": 6,
+    "wind": 1,
+    "temperature": 2,
+    "fog": 0,
+    "sun": {
+      "totalHours": 12.199999999999978,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Young",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "First night",
+    "location": "Marsh",
+    "day": 5,
+    "month": 4,
+    "year": 1353,
+    "precipitation": 4,
+    "wind": 2,
+    "temperature": 2,
+    "fog": 0,
+    "sun": {
+      "totalHours": 12.199999999999978,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Young",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Second night",
+    "location": "Marsh",
+    "day": 5,
+    "month": 4,
+    "year": 1353,
+    "precipitation": 2,
+    "wind": 2,
+    "temperature": 2,
+    "fog": 2,
+    "sun": {
+      "totalHours": 12.199999999999978,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Young",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Dawn",
+    "location": "Marsh",
+    "day": 6,
+    "month": 4,
+    "year": 1353,
+    "precipitation": 3,
+    "wind": 1,
+    "temperature": 2,
+    "fog": 1,
+    "sun": {
+      "totalHours": 12.266666666666644,
+      "remainingHours": 8,
+      "watches": [
+        "Sunrise",
+        "EasterlySun",
+        "EasterlySun",
+        "EasterlySun"
+      ]
+    },
+    "moon": "Young",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Midday",
+    "location": "Marsh",
+    "day": 6,
+    "month": 4,
+    "year": 1353,
+    "precipitation": 3,
+    "wind": 1,
+    "temperature": 2,
+    "fog": 0,
+    "sun": {
+      "totalHours": 12.266666666666644,
+      "remainingHours": 4,
+      "watches": [
+        "EasterlySun",
+        "EasterlySun",
+        "SolarNoon",
+        "WesterlySun"
+      ]
+    },
+    "moon": "Young",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Evening",
+    "location": "Marsh",
+    "day": 6,
+    "month": 4,
+    "year": 1353,
+    "precipitation": 3,
+    "wind": 1,
+    "temperature": 2,
+    "fog": 0,
+    "sun": {
+      "totalHours": 12.266666666666644,
+      "remainingHours": 0,
+      "watches": [
+        "WesterlySun",
+        "WesterlySun",
+        "WesterlySun",
+        "Sunset"
+      ]
+    },
+    "moon": "Young",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Dusk",
+    "location": "Marsh",
+    "day": 6,
+    "month": 4,
+    "year": 1353,
+    "precipitation": 3,
+    "wind": 3,
+    "temperature": 2,
+    "fog": 0,
+    "sun": {
+      "totalHours": 12.266666666666644,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Young",
+    "encounter": {
+      "time": 4,
+      "creature": "3 giant constrictors",
+      "type": "Encounter",
+      "text": "Just passing by. Hostile.",
+      "distance": "150 feet away",
+      "direction": "North-west",
+      "heading": "South-west"
+    }
+  },
+  {
+    "watch": "First night",
+    "location": "Marsh",
+    "day": 6,
+    "month": 4,
+    "year": 1353,
+    "precipitation": 3,
+    "wind": 3,
+    "temperature": 2,
+    "fog": 0,
+    "sun": {
+      "totalHours": 12.266666666666644,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Young",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Second night",
+    "location": "Marsh",
+    "day": 6,
+    "month": 4,
+    "year": 1353,
+    "precipitation": 5,
+    "wind": 3,
+    "temperature": 2,
+    "fog": 0,
+    "sun": {
+      "totalHours": 12.266666666666644,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Young",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Dawn",
+    "location": "Marsh",
+    "day": 7,
+    "month": 4,
+    "year": 1353,
+    "precipitation": 5,
+    "wind": 4,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 12.33333333333331,
+      "remainingHours": 8,
+      "watches": [
+        "Sunrise",
+        "EasterlySun",
+        "EasterlySun",
+        "EasterlySun"
+      ]
+    },
+    "moon": "Young",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Midday",
+    "location": "Marsh",
+    "day": 7,
+    "month": 4,
+    "year": 1353,
+    "precipitation": 7,
+    "wind": 4,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 12.33333333333331,
+      "remainingHours": 4,
+      "watches": [
+        "EasterlySun",
+        "EasterlySun",
+        "SolarNoon",
+        "WesterlySun"
+      ]
+    },
+    "moon": "Waxing Crescent",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Evening",
+    "location": "Marsh",
+    "day": 7,
+    "month": 4,
+    "year": 1353,
+    "precipitation": 5,
+    "wind": 4,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 12.33333333333331,
+      "remainingHours": 0,
+      "watches": [
+        "WesterlySun",
+        "WesterlySun",
+        "WesterlySun",
+        "Sunset"
+      ]
+    },
+    "moon": "Waxing Crescent",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Dusk",
+    "location": "Marsh",
+    "day": 7,
+    "month": 4,
+    "year": 1353,
+    "precipitation": 4,
+    "wind": 4,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 12.33333333333331,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Waxing Crescent",
+    "encounter": {
+      "text": "No encounter"
+    }
   }
 ]

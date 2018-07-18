@@ -25,16 +25,19 @@ footer, header, hgroup, menu, nav, section {
 }
 
 body {
-    line-height: 1.5em;
-    max-width: 720px;
-    width: 100%;
+    font-family: Trebuchet MS, sans-serif;
     margin-left: auto;
     margin-right: auto;
+    max-width: 720px;    
+    line-height: 1.5em;
+    width: 100%;
+    color: #2f2f2f;
 }
 
 h1 {
     font-size: 1.3em;
     font-weight: 700;
+    padding: 5px;
 }
 
 button {
@@ -57,55 +60,63 @@ button {
 }
 
 header {
+    background-color: white;
     display: grid;
     grid-template-columns: [half] 50% [fourty] 40% [ten] 10%;
 }
 
+p {
+    padding: 2px;
+    margin-left: 10px;
+}
+
 .container {
+    border: solid 1px black;
     display: grid;
     grid-template-columns: [ten] 10% [fourty] 40% [fourtyFive] 45% [five] 5%;
 }
 
 .grid-item {
-    border-bottom: 1px solid black;
+    border-bottom: solid 1px black;
 }
 
 .smalltext {
     font-size: 12px;
+    margin: 0px;
 }
 /* Daylight indicator */
 .sun {
     height: 25%;
-    min-height: 1.5em;
+    min-height: 1.8em;
 }
 
 .night {
-    background-color: black;
+    background: linear-gradient(to left, transparent, black);
     color: black;
 }
 
 .sunrise {
-    background-color: coral;
+    background: linear-gradient(to left, transparent, coral);
     color: coral;
 }
 
 .easterlysun {
-    background-color: lemonchiffon;
+    background: linear-gradient(to left, transparent, lemonchiffon);
     color: lemonchiffon;
 }
 
 .solarnoon {
-    background-color: yellow;
+    background: linear-gradient(to left, transparent, yellow);
     color: yellow;
 }
 
 .westerlysun {
-    background-color: gold;
+    background: linear-gradient(to left, transparent, gold);
     color: gold;
 }
 
 .sunset {
-    background-color: darkorange;
+    background: linear-gradient(to left, transparent, darkorange);
     color: darkorange;
 } 
 
@@ -129,27 +140,27 @@ header {
 
 .precipitation4 {
     background-color:  #8299ae;
-    color: white;
+    color: azure;
 }
 
 .precipitation5 {
     background-color:  #6c869e;
-    color: white;
+    color: azure;
 }
 
 .precipitation6 {
     background-color:  #57748e;
-    color: white;
+    color: azure;
 }
 
 .precipitation7 {
     background-color:  #41637e;
-    color: white;
+    color: azure;
 }
 
 .precipitation8 {
     background-color:  #2a526f;
-    color: white;
+    color: azure;
 }
 
 .results {
@@ -161,6 +172,8 @@ header {
 .redborder {
     border: 2px solid red;
 }
+
+/* Temperature styles */
 
 
 
