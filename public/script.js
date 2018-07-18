@@ -1033,15 +1033,33 @@ var UIController = (function() {
                     }
                 }
             // 2. Refresh date
-                    // Date
-                    var currentDay = array[0];
-                    var s = '/'
-                    var date = currentDay.day + s + currentDay.month + s + currentDay.year;
-                    var field = document.getElementById('date')
-                    field.innerHTML = date;
+                // Date
+                var currentDay = array[0];
+                var s = '/'
+                var date = currentDay.day + s + currentDay.month + s + currentDay.year;
+                var field = document.getElementById('date')
+                field.innerHTML = date;
             
             // 3. Print data to UI
             array.forEach(function(element, index, array) {
+                
+                // Set background color based on precipitation level
+                
+                function updateBackground (el, indx, type) {
+                    var div = document.getElementById(type + index)
+                    var string = 'precipitation'
+                    var oldClass;
+                    
+                    
+    
+                }
+                
+                updateBackground(element, index, 'daylight')
+                
+                document.getElementById('daylight' + index).classList.add('precipitation' + element.precipitation)
+                document.getElementById('encounter' + index).classList.add('precipitation' + element.precipitation)
+                document.getElementById('weather' + index).classList.add('precipitation' + element.precipitation)
+                document.getElementById('temperature' + index).classList.add('precipitation' + element.precipitation)
                 
                 // Daylight indicator, CSS classes match strings in sun.watches array
                 var daylight = document.getElementById(DOMstrings.daylight + index);
@@ -1110,7 +1128,7 @@ var UIController = (function() {
                 }
             // Weather
             var weather = document.getElementById(DOMstrings.weather + index);
-            removeChildren(weather)
+            removeChildren(weather)    
                 
             var windLevel = document.createElement('p');
                 
@@ -1120,9 +1138,17 @@ var UIController = (function() {
                 } else {
                     windLevel.innerHTML += '/';
                 }
-            }
+            }    
             
             weather.appendChild(windLevel)
+                
+                
+            // Temperature
+            var temperature = document.getElementById(DOMstrings.temperature + index)
+            removeChildren(temperature)
+            var temp = document.createElement('p');
+            temp.innerHTML = element.temperature;
+            temperature.appendChild(temp);
             
             if (index < 2) { 
                 
@@ -1145,7 +1171,9 @@ var UIController = (function() {
             weather.appendChild(wind)
             var precipitation = level(precipLvl, 'precipitation', effects)
             weather.appendChild(precipitation)
+            
                 
+            // Fog    
             if (element.fog > 0) {
                 var fogEffects = dataController.getFogEffects()
                 var fog = document.createElement('p');
@@ -1158,6 +1186,8 @@ var UIController = (function() {
                 
                 weather.appendChild(fog)
             }
+                
+
               
 
             var conditional = logicController.conditionals(array)
@@ -1168,6 +1198,8 @@ var UIController = (function() {
             }
                 
             }
+            
+                
                 
             // End of array loop    
             })
