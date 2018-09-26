@@ -34536,5 +34536,2192 @@
     "encounter": {
       "text": "No encounter"
     }
+  },
+  {
+    "watch": "Dawn",
+    "location": "Grasslands_forest",
+    "day": 10,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 2,
+    "wind": 0,
+    "temperature": 0,
+    "fog": 0,
+    "sun": {
+      "totalHours": 10.533333333333317,
+      "remainingHours": 7,
+      "watches": [
+        "Sunrise",
+        "EasterlySun",
+        "EasterlySun",
+        "EasterlySun"
+      ]
+    },
+    "moon": "Waxing Crescent",
+    "encounter": {
+      "time": 1,
+      "creature": "2d4 orcs",
+      "type": "Spoor",
+      "text": "A kobold hung by its neck"
+    }
+  },
+  {
+    "watch": "Midday",
+    "location": "Grasslands_forest",
+    "day": 10,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 2,
+    "wind": 2,
+    "temperature": 0,
+    "fog": 0,
+    "sun": {
+      "totalHours": 10.533333333333317,
+      "remainingHours": 3,
+      "watches": [
+        "EasterlySun",
+        "EasterlySun",
+        "SolarNoon",
+        "WesterlySun"
+      ]
+    },
+    "moon": "Waxing Quarter",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Evening",
+    "location": "Grasslands_forest",
+    "day": 10,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 4,
+    "wind": 2,
+    "temperature": 0,
+    "fog": 0,
+    "sun": {
+      "totalHours": 10.533333333333317,
+      "remainingHours": 0,
+      "watches": [
+        "WesterlySun",
+        "WesterlySun",
+        "Sunset",
+        "Night"
+      ]
+    },
+    "moon": "Waxing Quarter",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Dusk",
+    "location": "Grasslands_forest",
+    "day": 10,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 4,
+    "wind": 2,
+    "temperature": 0,
+    "fog": 0,
+    "sun": {
+      "totalHours": 10.533333333333317,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Waxing Quarter",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "First night",
+    "location": "Grasslands_forest",
+    "day": 10,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 4,
+    "wind": 2,
+    "temperature": 0,
+    "fog": 0,
+    "sun": {
+      "totalHours": 10.533333333333317,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Waxing Quarter",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Second night",
+    "location": "Grasslands_forest",
+    "day": 10,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 4,
+    "wind": 2,
+    "temperature": 0,
+    "fog": 0,
+    "sun": {
+      "totalHours": 10.533333333333317,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Waxing Quarter",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Dawn",
+    "location": "Grasslands_forest",
+    "day": 11,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 5,
+    "wind": 3,
+    "temperature": 0,
+    "fog": 0,
+    "sun": {
+      "totalHours": 10.599999999999984,
+      "remainingHours": 7,
+      "watches": [
+        "Sunrise",
+        "EasterlySun",
+        "EasterlySun",
+        "EasterlySun"
+      ]
+    },
+    "moon": "Waxing Quarter",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Midday",
+    "location": "Grasslands_forest",
+    "day": 11,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 5,
+    "wind": 1,
+    "temperature": 0,
+    "fog": 0,
+    "sun": {
+      "totalHours": 10.599999999999984,
+      "remainingHours": 3,
+      "watches": [
+        "EasterlySun",
+        "EasterlySun",
+        "SolarNoon",
+        "WesterlySun"
+      ]
+    },
+    "moon": "Waxing Quarter",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Evening",
+    "location": "Grasslands_forest",
+    "day": 11,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 6,
+    "wind": 3,
+    "temperature": 0,
+    "fog": 0,
+    "sun": {
+      "totalHours": 10.599999999999984,
+      "remainingHours": 0,
+      "watches": [
+        "WesterlySun",
+        "WesterlySun",
+        "Sunset",
+        "Night"
+      ]
+    },
+    "moon": "Waxing Quarter",
+    "encounter": {
+      "time": 3,
+      "creature": "1 orcs",
+      "type": "Encounter",
+      "text": "Chasing 2 orcs (at 50% HP)",
+      "distance": "200 feet away",
+      "direction": "South-east",
+      "heading": "North-west"
+    }
+  },
+  {
+    "watch": "Dusk",
+    "location": "Grasslands_forest",
+    "day": 11,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 7,
+    "wind": 3,
+    "temperature": 0,
+    "fog": 0,
+    "sun": {
+      "totalHours": 10.599999999999984,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Waxing Quarter",
+    "encounter": {
+      "time": 1,
+      "creature": "8 kobolds",
+      "type": "Encounter",
+      "text": "Defending lair",
+      "distance": "350 feet away",
+      "direction": "South",
+      "heading": "South-east"
+    }
+  },
+  {
+    "watch": "First night",
+    "location": "Grasslands_forest",
+    "day": 11,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 6,
+    "wind": 3,
+    "temperature": 0,
+    "fog": 0,
+    "sun": {
+      "totalHours": 10.599999999999984,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Waxing Quarter",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Second night",
+    "location": "Grasslands_forest",
+    "day": 11,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 5,
+    "wind": 4,
+    "temperature": -1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 10.599999999999984,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Waxing Quarter",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Dawn",
+    "location": "Grasslands_forest",
+    "day": 12,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 3,
+    "wind": 2,
+    "temperature": 0,
+    "fog": 0,
+    "sun": {
+      "totalHours": 10.66666666666665,
+      "remainingHours": 7,
+      "watches": [
+        "Sunrise",
+        "EasterlySun",
+        "EasterlySun",
+        "EasterlySun"
+      ]
+    },
+    "moon": "Waxing Quarter",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Midday",
+    "location": "Grasslands_forest",
+    "day": 12,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 3,
+    "wind": 1,
+    "temperature": 0,
+    "fog": 0,
+    "sun": {
+      "totalHours": 10.66666666666665,
+      "remainingHours": 3,
+      "watches": [
+        "EasterlySun",
+        "EasterlySun",
+        "SolarNoon",
+        "WesterlySun"
+      ]
+    },
+    "moon": "Waxing Quarter",
+    "encounter": {
+      "time": 3,
+      "creature": "3d4 kobolds",
+      "type": "Spoor",
+      "text": "A pit trap with a chest on top (1d6 falling damage + 1d10 spike damage)"
+    }
+  },
+  {
+    "watch": "Evening",
+    "location": "Grasslands_forest",
+    "day": 12,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 3,
+    "wind": 0,
+    "temperature": 0,
+    "fog": 0,
+    "sun": {
+      "totalHours": 10.66666666666665,
+      "remainingHours": 0,
+      "watches": [
+        "WesterlySun",
+        "WesterlySun",
+        "Sunset",
+        "Night"
+      ]
+    },
+    "moon": "Waxing Quarter",
+    "encounter": {
+      "time": 4,
+      "creature": "2d2 goblins",
+      "type": "Spoor",
+      "text": "An orc corpse with a chain around its neck and a spear through the head"
+    }
+  },
+  {
+    "watch": "Dusk",
+    "location": "Grasslands_forest",
+    "day": 12,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 3,
+    "wind": 0,
+    "temperature": 0,
+    "fog": 0,
+    "sun": {
+      "totalHours": 10.66666666666665,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Waxing Quarter",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "First night",
+    "location": "Grasslands_forest",
+    "day": 12,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 1,
+    "wind": 1,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 10.66666666666665,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Waxing Quarter",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Second night",
+    "location": "Grasslands_forest",
+    "day": 12,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 1,
+    "wind": 1,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 10.66666666666665,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Waxing Quarter",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Dawn",
+    "location": "Grasslands_forest",
+    "day": 13,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 0,
+    "wind": 1,
+    "temperature": 1,
+    "fog": 1,
+    "sun": {
+      "totalHours": 10.733333333333317,
+      "remainingHours": 7,
+      "watches": [
+        "Sunrise",
+        "EasterlySun",
+        "EasterlySun",
+        "EasterlySun"
+      ]
+    },
+    "moon": "Waxing Quarter",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Midday",
+    "location": "Grasslands_forest",
+    "day": 13,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 1,
+    "wind": 2,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 10.733333333333317,
+      "remainingHours": 3,
+      "watches": [
+        "EasterlySun",
+        "EasterlySun",
+        "SolarNoon",
+        "WesterlySun"
+      ]
+    },
+    "moon": "Waxing Gibbous",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Evening",
+    "location": "Grasslands_forest",
+    "day": 13,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 2,
+    "wind": 2,
+    "temperature": 0,
+    "fog": 0,
+    "sun": {
+      "totalHours": 10.733333333333317,
+      "remainingHours": 0,
+      "watches": [
+        "WesterlySun",
+        "WesterlySun",
+        "Sunset",
+        "Night"
+      ]
+    },
+    "moon": "Waxing Gibbous",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Dusk",
+    "location": "Grasslands_forest",
+    "day": 13,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 2,
+    "wind": 2,
+    "temperature": 0,
+    "fog": 0,
+    "sun": {
+      "totalHours": 10.733333333333317,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Waxing Gibbous",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "First night",
+    "location": "Grasslands_forest",
+    "day": 13,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 2,
+    "wind": 2,
+    "temperature": 0,
+    "fog": 0,
+    "sun": {
+      "totalHours": 10.733333333333317,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Waxing Gibbous",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Second night",
+    "location": "Grasslands_forest",
+    "day": 13,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 2,
+    "wind": 2,
+    "temperature": 0,
+    "fog": 0,
+    "sun": {
+      "totalHours": 10.733333333333317,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Waxing Gibbous",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Dawn",
+    "location": "Grasslands_forest",
+    "day": 14,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 2,
+    "wind": 2,
+    "temperature": 0,
+    "fog": 0,
+    "sun": {
+      "totalHours": 10.799999999999983,
+      "remainingHours": 7,
+      "watches": [
+        "Sunrise",
+        "EasterlySun",
+        "EasterlySun",
+        "EasterlySun"
+      ]
+    },
+    "moon": "Waxing Gibbous",
+    "encounter": {
+      "time": 2,
+      "creature": "Giant eagle",
+      "type": "Encounter",
+      "text": "Returning to lair with treasure equal to xp value",
+      "distance": "250 feet away",
+      "direction": "East",
+      "heading": "South-west"
+    }
+  },
+  {
+    "watch": "Midday",
+    "location": "Grasslands_forest",
+    "day": 14,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 2,
+    "wind": 2,
+    "temperature": 0,
+    "fog": 0,
+    "sun": {
+      "totalHours": 10.799999999999983,
+      "remainingHours": 3,
+      "watches": [
+        "EasterlySun",
+        "EasterlySun",
+        "SolarNoon",
+        "WesterlySun"
+      ]
+    },
+    "moon": "Waxing Gibbous",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Evening",
+    "location": "Grasslands_forest",
+    "day": 14,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 2,
+    "wind": 2,
+    "temperature": 0,
+    "fog": 0,
+    "sun": {
+      "totalHours": 10.799999999999983,
+      "remainingHours": 0,
+      "watches": [
+        "WesterlySun",
+        "WesterlySun",
+        "Sunset",
+        "Night"
+      ]
+    },
+    "moon": "Waxing Gibbous",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Dusk",
+    "location": "Grasslands_forest",
+    "day": 14,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 2,
+    "wind": 2,
+    "temperature": 0,
+    "fog": 0,
+    "sun": {
+      "totalHours": 10.799999999999983,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Waxing Gibbous",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "First night",
+    "location": "Grasslands_forest",
+    "day": 14,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 0,
+    "wind": 3,
+    "temperature": 1,
+    "fog": 1,
+    "sun": {
+      "totalHours": 10.799999999999983,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Waxing Gibbous",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Second night",
+    "location": "Grasslands_forest",
+    "day": 14,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 1,
+    "wind": 3,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 10.799999999999983,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Waxing Gibbous",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Dawn",
+    "location": "Grasslands_east",
+    "day": 15,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 1,
+    "wind": 3,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 10.86666666666665,
+      "remainingHours": 7,
+      "watches": [
+        "Sunrise",
+        "EasterlySun",
+        "EasterlySun",
+        "EasterlySun"
+      ]
+    },
+    "moon": "Waxing Gibbous",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Midday",
+    "location": "Grasslands_east",
+    "day": 15,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 1,
+    "wind": 3,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 10.86666666666665,
+      "remainingHours": 3,
+      "watches": [
+        "EasterlySun",
+        "EasterlySun",
+        "SolarNoon",
+        "WesterlySun"
+      ]
+    },
+    "moon": "Waxing Gibbous",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Evening",
+    "location": "Grasslands_east",
+    "day": 15,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 1,
+    "wind": 3,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 10.86666666666665,
+      "remainingHours": 0,
+      "watches": [
+        "WesterlySun",
+        "WesterlySun",
+        "Sunset",
+        "Night"
+      ]
+    },
+    "moon": "Waxing Gibbous",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Dusk",
+    "location": "Grasslands_east",
+    "day": 15,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 1,
+    "wind": 3,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 10.86666666666665,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Waxing Gibbous",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "First night",
+    "location": "Grasslands_east",
+    "day": 15,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 1,
+    "wind": 3,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 10.86666666666665,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Waxing Gibbous",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Second night",
+    "location": "Grasslands_east",
+    "day": 15,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 1,
+    "wind": 3,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 10.86666666666665,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Waxing Gibbous",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Dawn",
+    "location": "Grasslands_east",
+    "day": 16,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 1,
+    "wind": 3,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 10.933333333333316,
+      "remainingHours": 7,
+      "watches": [
+        "Sunrise",
+        "EasterlySun",
+        "EasterlySun",
+        "EasterlySun"
+      ]
+    },
+    "moon": "Waxing Gibbous",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Midday",
+    "location": "Grasslands_east",
+    "day": 16,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 1,
+    "wind": 3,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 10.933333333333316,
+      "remainingHours": 3,
+      "watches": [
+        "EasterlySun",
+        "EasterlySun",
+        "SolarNoon",
+        "WesterlySun"
+      ]
+    },
+    "moon": "Full",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Evening",
+    "location": "Grasslands_east",
+    "day": 16,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 1,
+    "wind": 3,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 10.933333333333316,
+      "remainingHours": 0,
+      "watches": [
+        "WesterlySun",
+        "WesterlySun",
+        "Sunset",
+        "Night"
+      ]
+    },
+    "moon": "Full",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Dusk",
+    "location": "Grasslands_east",
+    "day": 16,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 1,
+    "wind": 2,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 10.933333333333316,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Full",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "First night",
+    "location": "Grasslands_east",
+    "day": 16,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 2,
+    "wind": 2,
+    "temperature": 0,
+    "fog": 0,
+    "sun": {
+      "totalHours": 10.933333333333316,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Full",
+    "encounter": {
+      "time": 3,
+      "creature": "Giant eagle",
+      "type": "Encounter",
+      "text": "Just passing by. Does not care.",
+      "distance": "250 feet away",
+      "direction": "North-west",
+      "heading": "North-west"
+    }
+  },
+  {
+    "watch": "Second night",
+    "location": "Grasslands_east",
+    "day": 16,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 0,
+    "wind": 0,
+    "temperature": 1,
+    "fog": 1,
+    "sun": {
+      "totalHours": 10.933333333333316,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Full",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Dawn",
+    "location": "Grasslands_east",
+    "day": 17,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 1,
+    "wind": 0,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 10.999999999999982,
+      "remainingHours": 7,
+      "watches": [
+        "Sunrise",
+        "EasterlySun",
+        "EasterlySun",
+        "EasterlySun"
+      ]
+    },
+    "moon": "Full",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Midday",
+    "location": "Grasslands_east",
+    "day": 17,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 1,
+    "wind": 0,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 10.999999999999982,
+      "remainingHours": 3,
+      "watches": [
+        "EasterlySun",
+        "EasterlySun",
+        "SolarNoon",
+        "WesterlySun"
+      ]
+    },
+    "moon": "Full",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Evening",
+    "location": "Grasslands_east",
+    "day": 17,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 1,
+    "wind": 1,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 10.999999999999982,
+      "remainingHours": 0,
+      "watches": [
+        "WesterlySun",
+        "WesterlySun",
+        "Sunset",
+        "Night"
+      ]
+    },
+    "moon": "Full",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Dusk",
+    "location": "Grasslands_east",
+    "day": 17,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 1,
+    "wind": 1,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 10.999999999999982,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Full",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "First night",
+    "location": "Grasslands_east",
+    "day": 17,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 3,
+    "wind": 1,
+    "temperature": 0,
+    "fog": 0,
+    "sun": {
+      "totalHours": 10.999999999999982,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Full",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Second night",
+    "location": "Grasslands_east",
+    "day": 17,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 1,
+    "wind": 1,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 10.999999999999982,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Full",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Dawn",
+    "location": "Grasslands_east",
+    "day": 18,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 1,
+    "wind": 1,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.066666666666649,
+      "remainingHours": 7,
+      "watches": [
+        "Sunrise",
+        "EasterlySun",
+        "EasterlySun",
+        "EasterlySun"
+      ]
+    },
+    "moon": "Full",
+    "encounter": {
+      "time": 2,
+      "creature": "2 goblins",
+      "type": "Encounter",
+      "text": "Returning to lair low on HP (50%)",
+      "distance": "500 feet away",
+      "direction": "North-west",
+      "heading": "West"
+    }
+  },
+  {
+    "watch": "Midday",
+    "location": "Grasslands_east",
+    "day": 18,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 0,
+    "wind": 1,
+    "temperature": 1,
+    "fog": 1,
+    "sun": {
+      "totalHours": 11.066666666666649,
+      "remainingHours": 3,
+      "watches": [
+        "EasterlySun",
+        "SolarNoon",
+        "WesterlySun",
+        "WesterlySun"
+      ]
+    },
+    "moon": "Full",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Evening",
+    "location": "Grasslands_east",
+    "day": 18,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 0,
+    "wind": 1,
+    "temperature": 1,
+    "fog": 1,
+    "sun": {
+      "totalHours": 11.066666666666649,
+      "remainingHours": 0,
+      "watches": [
+        "WesterlySun",
+        "WesterlySun",
+        "Sunset",
+        "Night"
+      ]
+    },
+    "moon": "Full",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Dusk",
+    "location": "Grasslands_east",
+    "day": 18,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 0,
+    "wind": 3,
+    "temperature": 1,
+    "fog": 1,
+    "sun": {
+      "totalHours": 11.066666666666649,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Full",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "First night",
+    "location": "Grasslands_east",
+    "day": 18,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 1,
+    "wind": 3,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.066666666666649,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Full",
+    "encounter": {
+      "time": 3,
+      "creature": "Giant eagle",
+      "type": "Spoor",
+      "text": "A large egg shell"
+    }
+  },
+  {
+    "watch": "Second night",
+    "location": "Grasslands_east",
+    "day": 18,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 3,
+    "wind": 3,
+    "temperature": 0,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.066666666666649,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Full",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Dawn",
+    "location": "Grasslands_east",
+    "day": 19,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 3,
+    "wind": 3,
+    "temperature": 0,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.133333333333315,
+      "remainingHours": 7,
+      "watches": [
+        "Sunrise",
+        "EasterlySun",
+        "EasterlySun",
+        "EasterlySun"
+      ]
+    },
+    "moon": "Full",
+    "encounter": {
+      "time": 3,
+      "creature": "2d2 wolves",
+      "type": "Spoor",
+      "text": "Wolves howling"
+    }
+  },
+  {
+    "watch": "Midday",
+    "location": "Grasslands_east",
+    "day": 19,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 2,
+    "wind": 4,
+    "temperature": -1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.133333333333315,
+      "remainingHours": 3,
+      "watches": [
+        "EasterlySun",
+        "SolarNoon",
+        "WesterlySun",
+        "WesterlySun"
+      ]
+    },
+    "moon": "Waning Gibbous",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Evening",
+    "location": "Grasslands_east",
+    "day": 19,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 2,
+    "wind": 3,
+    "temperature": 0,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.133333333333315,
+      "remainingHours": 0,
+      "watches": [
+        "WesterlySun",
+        "WesterlySun",
+        "Sunset",
+        "Night"
+      ]
+    },
+    "moon": "Waning Gibbous",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Dusk",
+    "location": "Grasslands_east",
+    "day": 19,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 2,
+    "wind": 5,
+    "temperature": -1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.133333333333315,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Waning Gibbous",
+    "encounter": {
+      "time": 1,
+      "creature": "7 goblins",
+      "type": "Encounter",
+      "text": "Hunting for food (advantage to Perception)",
+      "distance": "450 feet away",
+      "direction": "North",
+      "heading": "East"
+    }
+  },
+  {
+    "watch": "First night",
+    "location": "Grasslands_east",
+    "day": 19,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 2,
+    "wind": 5,
+    "temperature": -1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.133333333333315,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Waning Gibbous",
+    "encounter": {
+      "time": 4,
+      "creature": "Giant eagle",
+      "type": "Spoor",
+      "text": "A large egg shell"
+    }
+  },
+  {
+    "watch": "Second night",
+    "location": "Grasslands_east",
+    "day": 19,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 2,
+    "wind": 4,
+    "temperature": -1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.133333333333315,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Waning Gibbous",
+    "encounter": {
+      "time": 2,
+      "creature": "Giant eagle",
+      "type": "Encounter",
+      "text": "Returning to lair low on HP (50%)",
+      "distance": "350 feet away",
+      "direction": "South-west",
+      "heading": "North"
+    }
+  },
+  {
+    "watch": "Dawn",
+    "location": "Grasslands_east",
+    "day": 20,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 2,
+    "wind": 4,
+    "temperature": -1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.199999999999982,
+      "remainingHours": 7,
+      "watches": [
+        "Sunrise",
+        "EasterlySun",
+        "EasterlySun",
+        "EasterlySun"
+      ]
+    },
+    "moon": "Waning Gibbous",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Midday",
+    "location": "Grasslands_east",
+    "day": 20,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 1,
+    "wind": 4,
+    "temperature": 0,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.199999999999982,
+      "remainingHours": 3,
+      "watches": [
+        "EasterlySun",
+        "SolarNoon",
+        "WesterlySun",
+        "WesterlySun"
+      ]
+    },
+    "moon": "Waning Gibbous",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Evening",
+    "location": "Grasslands_east",
+    "day": 20,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 1,
+    "wind": 3,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.199999999999982,
+      "remainingHours": 0,
+      "watches": [
+        "WesterlySun",
+        "WesterlySun",
+        "Sunset",
+        "Night"
+      ]
+    },
+    "moon": "Waning Gibbous",
+    "encounter": {
+      "time": 3,
+      "creature": "3 wolves",
+      "type": "Encounter",
+      "text": "Ready to ambush 9 kobolds in 1d6 hours, -5 to passive Perception",
+      "distance": "550 feet away",
+      "direction": "North",
+      "heading": "North"
+    }
+  },
+  {
+    "watch": "Dusk",
+    "location": "Grasslands_east",
+    "day": 20,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 1,
+    "wind": 3,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.199999999999982,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Waning Gibbous",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "First night",
+    "location": "Grasslands_east",
+    "day": 20,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 0,
+    "wind": 3,
+    "temperature": 1,
+    "fog": 1,
+    "sun": {
+      "totalHours": 11.199999999999982,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Waning Gibbous",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Second night",
+    "location": "Grasslands_east",
+    "day": 20,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 0,
+    "wind": 3,
+    "temperature": 1,
+    "fog": 1,
+    "sun": {
+      "totalHours": 11.199999999999982,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Waning Gibbous",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Dawn",
+    "location": "Grasslands_east",
+    "day": 21,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 2,
+    "wind": 2,
+    "temperature": 0,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.266666666666648,
+      "remainingHours": 7,
+      "watches": [
+        "Sunrise",
+        "EasterlySun",
+        "EasterlySun",
+        "EasterlySun"
+      ]
+    },
+    "moon": "Waning Gibbous",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Midday",
+    "location": "Grasslands_east",
+    "day": 21,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 2,
+    "wind": 2,
+    "temperature": 0,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.266666666666648,
+      "remainingHours": 3,
+      "watches": [
+        "EasterlySun",
+        "SolarNoon",
+        "WesterlySun",
+        "WesterlySun"
+      ]
+    },
+    "moon": "Waning Gibbous",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Evening",
+    "location": "Grasslands_east",
+    "day": 21,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 2,
+    "wind": 2,
+    "temperature": 0,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.266666666666648,
+      "remainingHours": 0,
+      "watches": [
+        "WesterlySun",
+        "WesterlySun",
+        "Sunset",
+        "Night"
+      ]
+    },
+    "moon": "Waning Gibbous",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Dusk",
+    "location": "Grasslands_east",
+    "day": 21,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 2,
+    "wind": 2,
+    "temperature": 0,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.266666666666648,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Waning Gibbous",
+    "encounter": {
+      "time": 3,
+      "creature": "1d2 orcs",
+      "type": "Spoor",
+      "text": "A goblin hung by its neck"
+    }
+  },
+  {
+    "watch": "First night",
+    "location": "Grasslands_east",
+    "day": 21,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 2,
+    "wind": 2,
+    "temperature": 0,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.266666666666648,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Waning Gibbous",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Second night",
+    "location": "Grasslands_east",
+    "day": 21,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 0,
+    "wind": 3,
+    "temperature": 1,
+    "fog": 1,
+    "sun": {
+      "totalHours": 11.266666666666648,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Waning Gibbous",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Dawn",
+    "location": "Grasslands_east",
+    "day": 22,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 0,
+    "wind": 3,
+    "temperature": 1,
+    "fog": 1,
+    "sun": {
+      "totalHours": 11.333333333333314,
+      "remainingHours": 7,
+      "watches": [
+        "Sunrise",
+        "EasterlySun",
+        "EasterlySun",
+        "EasterlySun"
+      ]
+    },
+    "moon": "Waning Gibbous",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Midday",
+    "location": "Grasslands_east",
+    "day": 22,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 1,
+    "wind": 4,
+    "temperature": 0,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.333333333333314,
+      "remainingHours": 3,
+      "watches": [
+        "EasterlySun",
+        "SolarNoon",
+        "WesterlySun",
+        "WesterlySun"
+      ]
+    },
+    "moon": "Waning Quarter",
+    "encounter": {
+      "time": 1,
+      "creature": "3d3 goblins",
+      "type": "Spoor",
+      "text": "A bled-out deer, hung up in a crude trap"
+    }
+  },
+  {
+    "watch": "Evening",
+    "location": "Grasslands_east",
+    "day": 22,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 1,
+    "wind": 4,
+    "temperature": 0,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.333333333333314,
+      "remainingHours": 0,
+      "watches": [
+        "WesterlySun",
+        "WesterlySun",
+        "Sunset",
+        "Night"
+      ]
+    },
+    "moon": "Waning Quarter",
+    "encounter": {
+      "time": 3,
+      "creature": "8 goblins",
+      "type": "Encounter",
+      "text": "Fighting 3 goblins",
+      "distance": "400 feet away",
+      "direction": "East",
+      "heading": "South-west"
+    }
+  },
+  {
+    "watch": "Dusk",
+    "location": "Grasslands_east",
+    "day": 22,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 1,
+    "wind": 2,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.333333333333314,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Waning Quarter",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "First night",
+    "location": "Grasslands_east",
+    "day": 22,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 1,
+    "wind": 2,
+    "temperature": 1,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.333333333333314,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Waning Quarter",
+    "encounter": {
+      "time": 2,
+      "creature": "Giant eagle",
+      "type": "Spoor",
+      "text": "Uprooted trees"
+    }
+  },
+  {
+    "watch": "Second night",
+    "location": "Grasslands_east",
+    "day": 22,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 2,
+    "wind": 2,
+    "temperature": 0,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.333333333333314,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Waning Quarter",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Dawn",
+    "location": "Grasslands_east",
+    "day": 23,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 2,
+    "wind": 3,
+    "temperature": 0,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.39999999999998,
+      "remainingHours": 7,
+      "watches": [
+        "Sunrise",
+        "EasterlySun",
+        "EasterlySun",
+        "EasterlySun"
+      ]
+    },
+    "moon": "Waning Quarter",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Midday",
+    "location": "Grasslands_east",
+    "day": 23,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 2,
+    "wind": 3,
+    "temperature": 0,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.39999999999998,
+      "remainingHours": 3,
+      "watches": [
+        "EasterlySun",
+        "SolarNoon",
+        "WesterlySun",
+        "WesterlySun"
+      ]
+    },
+    "moon": "Waning Quarter",
+    "encounter": {
+      "time": 2,
+      "creature": "1d2 orcs",
+      "type": "Spoor",
+      "text": "Dead goblins"
+    }
+  },
+  {
+    "watch": "Evening",
+    "location": "Grasslands_east",
+    "day": 23,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 2,
+    "wind": 3,
+    "temperature": 0,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.39999999999998,
+      "remainingHours": 0,
+      "watches": [
+        "WesterlySun",
+        "WesterlySun",
+        "Sunset",
+        "Night"
+      ]
+    },
+    "moon": "Waning Quarter",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Dusk",
+    "location": "Grasslands_east",
+    "day": 23,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 2,
+    "wind": 1,
+    "temperature": 0,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.39999999999998,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Waning Quarter",
+    "encounter": {
+      "time": 1,
+      "creature": "1d2 orcs",
+      "type": "Spoor",
+      "text": "A crude axe broken in two"
+    }
+  },
+  {
+    "watch": "First night",
+    "location": "Grasslands_east",
+    "day": 23,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 2,
+    "wind": 1,
+    "temperature": 0,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.39999999999998,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Waning Quarter",
+    "encounter": {
+      "text": "No encounter"
+    }
+  },
+  {
+    "watch": "Second night",
+    "location": "Grasslands_east",
+    "day": 23,
+    "month": 3,
+    "year": 1353,
+    "precipitation": 3,
+    "wind": 1,
+    "temperature": 0,
+    "fog": 0,
+    "sun": {
+      "totalHours": 11.39999999999998,
+      "remainingHours": 0,
+      "watches": [
+        "Night",
+        "Night",
+        "Night",
+        "Night"
+      ]
+    },
+    "moon": "Waning Quarter",
+    "encounter": {
+      "text": "No encounter"
+    }
   }
 ]
