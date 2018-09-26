@@ -16,7 +16,7 @@ var logicController = (function() {
                 } else {    
                     
                         // 1. Get the appropriate encounter table
-                    var location = watch.location
+                    var location = watch.location.split('_')[1]
                     var encounters = dataController.getEncounters()[location] 
                     
                         // 2. Determine the time
@@ -273,8 +273,9 @@ var logicController = (function() {
                 return nextWeather
             }        
         
+        var locationString = watch.location.split('_')[0]
         monthData = dataController.getMonths()[watch.month -1]
-        locationData = dataController.getLocations()[watch.location]
+        locationData = dataController.getLocations()[locationString]
         
         result = assignProbs(weatherIndex, monthData, locationData, precipOrWind);
         
@@ -297,7 +298,8 @@ var logicController = (function() {
                 temp += 1;   
             }
             
-            var local = dataController.getLocations()[watch.location].temperatureModifier;
+            var locString = watch.location.split('_')[0]
+            var local = dataController.getLocations()[locString].temperatureModifier;
             temp += local;
             
             return temp
@@ -506,7 +508,7 @@ var weatherEffects = {
 var fogEffects = [{level: 'Light fog', effect: 'Visual range reduced by 50%'}, {level: 'Heavy fog', effect: 'Visual range reduced by 90%'}] 
     
 var encounters = {
-    "Grasslands": [
+    "outskirts": [
         {
             "creature": "Giant eagle",
             "lair": "A nest in an elevated location",
@@ -644,7 +646,559 @@ var encounters = {
             "secondaryTraces": "Shed scales"
         }
     ],
-    "Marsh": [
+    "east": [
+        {
+            "creature": "Giant eagle",
+            "lair": "A nest in an elevated location",
+            "spoor": "A bundle of straw",
+            "tracks": "A piercing eagle scream far away",
+            "primaryTraces": "Uprooted trees",
+            "secondaryTraces": "A large egg shell"
+        },
+        {
+            "creature": "2d4 worgs",
+            "lair": "The root of a fallen tree",
+            "spoor": "A savaged orc",
+            "tracks": "Large paw marks",
+            "primaryTraces": "Tufts of hair",
+            "secondaryTraces": "Wolves howling"
+        },
+        {
+            "creature": "1d6 dire wolves",
+            "lair": "Underground cave",
+            "spoor": "A party of orcs torn apart",
+            "tracks": "Gigantic paw marks",
+            "primaryTraces": "Wolves howling",
+            "secondaryTraces": "Tufts of hair"
+        },
+        {
+            "creature": "Mammoth",
+            "lair": "Flattened grass near a pond",
+            "spoor": "Flattened grass",
+            "tracks": "Giant hoof prints",
+            "primaryTraces": "Tufts of hair",
+            "secondaryTraces": "Piece of a tusk"
+        },
+        {
+            "creature": "2d8 wolves",
+            "lair": "Shelter under a rock",
+            "spoor": "Droppings",
+            "tracks": "Paw marks",
+            "primaryTraces": "Tufts of hair",
+            "secondaryTraces": "Wolves howling"
+        },
+        {
+            "creature": "Giant elk",
+            "lair": "Flattened grass near a pond",
+            "spoor": "A chewed-on bush",
+            "tracks": "Big hoof prints",
+            "primaryTraces": "A tree trunk with claw marks (actually from antlers)",
+            "secondaryTraces": "A baby elk"
+        },
+        {
+            "creature": "Griffon",
+            "lair": "A cave high up in the mountains",
+            "spoor": "A deer clawed to death",
+            "tracks": "Paw marks and feathers",
+            "primaryTraces": "Large feathers",
+            "secondaryTraces": "A large egg shell"
+        },
+        {
+            "creature": "1d6 goblins and a goblin boss",
+            "lair": "A small campsite",
+            "spoor": "A bled-out deer",
+            "tracks": "Footprints, some with boots, some not",
+            "primaryTraces": "A blackened pentagram carved into rock",
+            "secondaryTraces": "An orc corpse with a chain around its neck and a spear through the head"
+        },
+        {
+            "creature": "Giant eagle",
+            "lair": "A nest in an elevated location",
+            "spoor": "A bundle of straw",
+            "tracks": "A piercing eagle scream far away",
+            "primaryTraces": "Uprooted trees",
+            "secondaryTraces": "A large egg shell"
+        },
+        {
+            "creature": "2d4 orcs",
+            "lair": "A crude campsite",
+            "spoor": "Dead kobolds",
+            "tracks": "Shoeprints",
+            "primaryTraces": "A crude axe broken in two",
+            "secondaryTraces": "A kobold hung by its neck"
+        },
+        {
+            "creature": "Swarm of ravens",
+            "lair": "Nests in trees",
+            "spoor": "Black feathers",
+            "tracks": "A kobold with its eyes picked out",
+            "primaryTraces": "Dark clouds moving fast",
+            "secondaryTraces": "Distant cawing"
+        },
+        {
+            "creature": "Ogre",
+            "lair": "A large hole in the ground",
+            "spoor": "A decapitated deer",
+            "tracks": "Big footprints",
+            "primaryTraces": "A crude sculpture",
+            "secondaryTraces": "Trees torn down"
+        },
+        {
+            "creature": "3d4 kobolds",
+            "lair": "A small, crude campsite",
+            "spoor": "A pit trap with a chest on top (1d6 falling damage + 1d10 spike damage)",
+            "tracks": "Big footprints",
+            "primaryTraces": "Crude mining tools, small",
+            "secondaryTraces": "Simple sculpture of a dragon"
+        },
+        {
+            "creature": "Ettin",
+            "lair": "A cave",
+            "spoor": "Orcs with their skulls crushed",
+            "tracks": "Large footprints in a seemingly random path",
+            "primaryTraces": "Crude clothing",
+            "secondaryTraces": "A large stick with long hairs stuck to it"
+        },
+        {
+            "creature": "Orc eye of Gruumsh + 2 orcs",
+            "lair": "A sophisticated campsite (spit-roast, latrine)",
+            "spoor": "A dead orc with a sign around his neck (Orchish: Heretic)",
+            "tracks": "Shoeprints",
+            "primaryTraces": "An altar to Gruumsh",
+            "secondaryTraces": "Charred organic matter"
+        },
+        {
+            "creature": "Werewolf",
+            "lair": "A basic hut",
+            "spoor": "A bloody holy symbol to Iov",
+            "tracks": "Shoeprints",
+            "primaryTraces": "Wolf hairs",
+            "secondaryTraces": "Torn human clothing"
+        },        
+        {
+            "creature": "Adult green dragon",
+            "lair": "A spot where the dragon has landed",
+            "spoor": "A charred elk",
+            "tracks": "A gold necklace in a tree",
+            "primaryTraces": "A distant roar",
+            "secondaryTraces": "Shed scales"
+        }
+    ],
+    "west": [
+        {
+            "creature": "Giant eagle",
+            "lair": "A nest in an elevated location",
+            "spoor": "A bundle of straw",
+            "tracks": "A piercing eagle scream far away",
+            "primaryTraces": "Uprooted trees",
+            "secondaryTraces": "A large egg shell"
+        },
+        {
+            "creature": "2d4 worgs",
+            "lair": "The root of a fallen tree",
+            "spoor": "A savaged orc",
+            "tracks": "Large paw marks",
+            "primaryTraces": "Tufts of hair",
+            "secondaryTraces": "Wolves howling"
+        },
+        {
+            "creature": "1d6 dire wolves",
+            "lair": "Underground cave",
+            "spoor": "A party of orcs torn apart",
+            "tracks": "Gigantic paw marks",
+            "primaryTraces": "Wolves howling",
+            "secondaryTraces": "Tufts of hair"
+        },
+        {
+            "creature": "Mammoth",
+            "lair": "Flattened grass near a pond",
+            "spoor": "Flattened grass",
+            "tracks": "Giant hoof prints",
+            "primaryTraces": "Tufts of hair",
+            "secondaryTraces": "Piece of a tusk"
+        },
+        {
+            "creature": "2d8 wolves",
+            "lair": "Shelter under a rock",
+            "spoor": "Droppings",
+            "tracks": "Paw marks",
+            "primaryTraces": "Tufts of hair",
+            "secondaryTraces": "Wolves howling"
+        },
+        {
+            "creature": "Giant elk",
+            "lair": "Flattened grass near a pond",
+            "spoor": "A chewed-on bush",
+            "tracks": "Big hoof prints",
+            "primaryTraces": "A tree trunk with claw marks (actually from antlers)",
+            "secondaryTraces": "A baby elk"
+        },
+        {
+            "creature": "Griffon",
+            "lair": "A cave high up in the mountains",
+            "spoor": "A deer clawed to death",
+            "tracks": "Paw marks and feathers",
+            "primaryTraces": "Large feathers",
+            "secondaryTraces": "A large egg shell"
+        },
+        {
+            "creature": "1d6 goblins and a goblin boss",
+            "lair": "A small campsite",
+            "spoor": "A bled-out deer",
+            "tracks": "Footprints, some with boots, some not",
+            "primaryTraces": "A blackened pentagram carved into rock",
+            "secondaryTraces": "An orc corpse with a chain around its neck and a spear through the head"
+        },
+        {
+            "creature": "Giant eagle",
+            "lair": "A nest in an elevated location",
+            "spoor": "A bundle of straw",
+            "tracks": "A piercing eagle scream far away",
+            "primaryTraces": "Uprooted trees",
+            "secondaryTraces": "A large egg shell"
+        },
+        {
+            "creature": "2d4 orcs",
+            "lair": "A crude campsite",
+            "spoor": "Dead kobolds",
+            "tracks": "Shoeprints",
+            "primaryTraces": "A crude axe broken in two",
+            "secondaryTraces": "A kobold hung by its neck"
+        },
+        {
+            "creature": "Swarm of ravens",
+            "lair": "Nests in trees",
+            "spoor": "Black feathers",
+            "tracks": "A kobold with its eyes picked out",
+            "primaryTraces": "Dark clouds moving fast",
+            "secondaryTraces": "Distant cawing"
+        },
+        {
+            "creature": "Ogre",
+            "lair": "A large hole in the ground",
+            "spoor": "A decapitated deer",
+            "tracks": "Big footprints",
+            "primaryTraces": "A crude sculpture",
+            "secondaryTraces": "Trees torn down"
+        },
+        {
+            "creature": "3d4 kobolds",
+            "lair": "A small, crude campsite",
+            "spoor": "A pit trap with a chest on top (1d6 falling damage + 1d10 spike damage)",
+            "tracks": "Big footprints",
+            "primaryTraces": "Crude mining tools, small",
+            "secondaryTraces": "Simple sculpture of a dragon"
+        },
+        {
+            "creature": "Ettin",
+            "lair": "A cave",
+            "spoor": "Orcs with their skulls crushed",
+            "tracks": "Large footprints in a seemingly random path",
+            "primaryTraces": "Crude clothing",
+            "secondaryTraces": "A large stick with long hairs stuck to it"
+        },
+        {
+            "creature": "Orc eye of Gruumsh + 2 orcs",
+            "lair": "A sophisticated campsite (spit-roast, latrine)",
+            "spoor": "A dead orc with a sign around his neck (Orchish: Heretic)",
+            "tracks": "Shoeprints",
+            "primaryTraces": "An altar to Gruumsh",
+            "secondaryTraces": "Charred organic matter"
+        },
+        {
+            "creature": "Werewolf",
+            "lair": "A basic hut",
+            "spoor": "A bloody holy symbol to Iov",
+            "tracks": "Shoeprints",
+            "primaryTraces": "Wolf hairs",
+            "secondaryTraces": "Torn human clothing"
+        },        
+        {
+            "creature": "Adult green dragon",
+            "lair": "A spot where the dragon has landed",
+            "spoor": "A charred elk",
+            "tracks": "A gold necklace in a tree",
+            "primaryTraces": "A distant roar",
+            "secondaryTraces": "Shed scales"
+        }
+    ],
+    "north": [
+        {
+            "creature": "Giant eagle",
+            "lair": "A nest in an elevated location",
+            "spoor": "A bundle of straw",
+            "tracks": "A piercing eagle scream far away",
+            "primaryTraces": "Uprooted trees",
+            "secondaryTraces": "A large egg shell"
+        },
+        {
+            "creature": "2d4 worgs",
+            "lair": "The root of a fallen tree",
+            "spoor": "A savaged orc",
+            "tracks": "Large paw marks",
+            "primaryTraces": "Tufts of hair",
+            "secondaryTraces": "Wolves howling"
+        },
+        {
+            "creature": "1d6 dire wolves",
+            "lair": "Underground cave",
+            "spoor": "A party of orcs torn apart",
+            "tracks": "Gigantic paw marks",
+            "primaryTraces": "Wolves howling",
+            "secondaryTraces": "Tufts of hair"
+        },
+        {
+            "creature": "Mammoth",
+            "lair": "Flattened grass near a pond",
+            "spoor": "Flattened grass",
+            "tracks": "Giant hoof prints",
+            "primaryTraces": "Tufts of hair",
+            "secondaryTraces": "Piece of a tusk"
+        },
+        {
+            "creature": "2d8 wolves",
+            "lair": "Shelter under a rock",
+            "spoor": "Droppings",
+            "tracks": "Paw marks",
+            "primaryTraces": "Tufts of hair",
+            "secondaryTraces": "Wolves howling"
+        },
+        {
+            "creature": "Giant elk",
+            "lair": "Flattened grass near a pond",
+            "spoor": "A chewed-on bush",
+            "tracks": "Big hoof prints",
+            "primaryTraces": "A tree trunk with claw marks (actually from antlers)",
+            "secondaryTraces": "A baby elk"
+        },
+        {
+            "creature": "Griffon",
+            "lair": "A cave high up in the mountains",
+            "spoor": "A deer clawed to death",
+            "tracks": "Paw marks and feathers",
+            "primaryTraces": "Large feathers",
+            "secondaryTraces": "A large egg shell"
+        },
+        {
+            "creature": "1d6 goblins and a goblin boss",
+            "lair": "A small campsite",
+            "spoor": "A bled-out deer",
+            "tracks": "Footprints, some with boots, some not",
+            "primaryTraces": "A blackened pentagram carved into rock",
+            "secondaryTraces": "An orc corpse with a chain around its neck and a spear through the head"
+        },
+        {
+            "creature": "Giant eagle",
+            "lair": "A nest in an elevated location",
+            "spoor": "A bundle of straw",
+            "tracks": "A piercing eagle scream far away",
+            "primaryTraces": "Uprooted trees",
+            "secondaryTraces": "A large egg shell"
+        },
+        {
+            "creature": "2d4 orcs",
+            "lair": "A crude campsite",
+            "spoor": "Dead kobolds",
+            "tracks": "Shoeprints",
+            "primaryTraces": "A crude axe broken in two",
+            "secondaryTraces": "A kobold hung by its neck"
+        },
+        {
+            "creature": "Swarm of ravens",
+            "lair": "Nests in trees",
+            "spoor": "Black feathers",
+            "tracks": "A kobold with its eyes picked out",
+            "primaryTraces": "Dark clouds moving fast",
+            "secondaryTraces": "Distant cawing"
+        },
+        {
+            "creature": "Ogre",
+            "lair": "A large hole in the ground",
+            "spoor": "A decapitated deer",
+            "tracks": "Big footprints",
+            "primaryTraces": "A crude sculpture",
+            "secondaryTraces": "Trees torn down"
+        },
+        {
+            "creature": "3d4 kobolds",
+            "lair": "A small, crude campsite",
+            "spoor": "A pit trap with a chest on top (1d6 falling damage + 1d10 spike damage)",
+            "tracks": "Big footprints",
+            "primaryTraces": "Crude mining tools, small",
+            "secondaryTraces": "Simple sculpture of a dragon"
+        },
+        {
+            "creature": "Ettin",
+            "lair": "A cave",
+            "spoor": "Orcs with their skulls crushed",
+            "tracks": "Large footprints in a seemingly random path",
+            "primaryTraces": "Crude clothing",
+            "secondaryTraces": "A large stick with long hairs stuck to it"
+        },
+        {
+            "creature": "Orc eye of Gruumsh + 2 orcs",
+            "lair": "A sophisticated campsite (spit-roast, latrine)",
+            "spoor": "A dead orc with a sign around his neck (Orchish: Heretic)",
+            "tracks": "Shoeprints",
+            "primaryTraces": "An altar to Gruumsh",
+            "secondaryTraces": "Charred organic matter"
+        },
+        {
+            "creature": "Werewolf",
+            "lair": "A basic hut",
+            "spoor": "A bloody holy symbol to Iov",
+            "tracks": "Shoeprints",
+            "primaryTraces": "Wolf hairs",
+            "secondaryTraces": "Torn human clothing"
+        },        
+        {
+            "creature": "Adult green dragon",
+            "lair": "A spot where the dragon has landed",
+            "spoor": "A charred elk",
+            "tracks": "A gold necklace in a tree",
+            "primaryTraces": "A distant roar",
+            "secondaryTraces": "Shed scales"
+        }
+    ],
+    "forest": [
+        {
+            "creature": "Giant eagle",
+            "lair": "A nest in an elevated location",
+            "spoor": "A bundle of straw",
+            "tracks": "A piercing eagle scream far away",
+            "primaryTraces": "Uprooted trees",
+            "secondaryTraces": "A large egg shell"
+        },
+        {
+            "creature": "2d4 worgs",
+            "lair": "The root of a fallen tree",
+            "spoor": "A savaged orc",
+            "tracks": "Large paw marks",
+            "primaryTraces": "Tufts of hair",
+            "secondaryTraces": "Wolves howling"
+        },
+        {
+            "creature": "1d6 dire wolves",
+            "lair": "Underground cave",
+            "spoor": "A party of orcs torn apart",
+            "tracks": "Gigantic paw marks",
+            "primaryTraces": "Wolves howling",
+            "secondaryTraces": "Tufts of hair"
+        },
+        {
+            "creature": "Mammoth",
+            "lair": "Flattened grass near a pond",
+            "spoor": "Flattened grass",
+            "tracks": "Giant hoof prints",
+            "primaryTraces": "Tufts of hair",
+            "secondaryTraces": "Piece of a tusk"
+        },
+        {
+            "creature": "2d8 wolves",
+            "lair": "Shelter under a rock",
+            "spoor": "Droppings",
+            "tracks": "Paw marks",
+            "primaryTraces": "Tufts of hair",
+            "secondaryTraces": "Wolves howling"
+        },
+        {
+            "creature": "Giant elk",
+            "lair": "Flattened grass near a pond",
+            "spoor": "A chewed-on bush",
+            "tracks": "Big hoof prints",
+            "primaryTraces": "A tree trunk with claw marks (actually from antlers)",
+            "secondaryTraces": "A baby elk"
+        },
+        {
+            "creature": "Griffon",
+            "lair": "A cave high up in the mountains",
+            "spoor": "A deer clawed to death",
+            "tracks": "Paw marks and feathers",
+            "primaryTraces": "Large feathers",
+            "secondaryTraces": "A large egg shell"
+        },
+        {
+            "creature": "1d6 goblins and a goblin boss",
+            "lair": "A small campsite",
+            "spoor": "A bled-out deer",
+            "tracks": "Footprints, some with boots, some not",
+            "primaryTraces": "A blackened pentagram carved into rock",
+            "secondaryTraces": "An orc corpse with a chain around its neck and a spear through the head"
+        },
+        {
+            "creature": "Giant eagle",
+            "lair": "A nest in an elevated location",
+            "spoor": "A bundle of straw",
+            "tracks": "A piercing eagle scream far away",
+            "primaryTraces": "Uprooted trees",
+            "secondaryTraces": "A large egg shell"
+        },
+        {
+            "creature": "2d4 orcs",
+            "lair": "A crude campsite",
+            "spoor": "Dead kobolds",
+            "tracks": "Shoeprints",
+            "primaryTraces": "A crude axe broken in two",
+            "secondaryTraces": "A kobold hung by its neck"
+        },
+        {
+            "creature": "Swarm of ravens",
+            "lair": "Nests in trees",
+            "spoor": "Black feathers",
+            "tracks": "A kobold with its eyes picked out",
+            "primaryTraces": "Dark clouds moving fast",
+            "secondaryTraces": "Distant cawing"
+        },
+        {
+            "creature": "Ogre",
+            "lair": "A large hole in the ground",
+            "spoor": "A decapitated deer",
+            "tracks": "Big footprints",
+            "primaryTraces": "A crude sculpture",
+            "secondaryTraces": "Trees torn down"
+        },
+        {
+            "creature": "3d4 kobolds",
+            "lair": "A small, crude campsite",
+            "spoor": "A pit trap with a chest on top (1d6 falling damage + 1d10 spike damage)",
+            "tracks": "Big footprints",
+            "primaryTraces": "Crude mining tools, small",
+            "secondaryTraces": "Simple sculpture of a dragon"
+        },
+        {
+            "creature": "Ettin",
+            "lair": "A cave",
+            "spoor": "Orcs with their skulls crushed",
+            "tracks": "Large footprints in a seemingly random path",
+            "primaryTraces": "Crude clothing",
+            "secondaryTraces": "A large stick with long hairs stuck to it"
+        },
+        {
+            "creature": "Orc eye of Gruumsh + 2 orcs",
+            "lair": "A sophisticated campsite (spit-roast, latrine)",
+            "spoor": "A dead orc with a sign around his neck (Orchish: Heretic)",
+            "tracks": "Shoeprints",
+            "primaryTraces": "An altar to Gruumsh",
+            "secondaryTraces": "Charred organic matter"
+        },
+        {
+            "creature": "Werewolf",
+            "lair": "A basic hut",
+            "spoor": "A bloody holy symbol to Iov",
+            "tracks": "Shoeprints",
+            "primaryTraces": "Wolf hairs",
+            "secondaryTraces": "Torn human clothing"
+        },        
+        {
+            "creature": "Adult green dragon",
+            "lair": "A spot where the dragon has landed",
+            "spoor": "A charred elk",
+            "tracks": "A gold necklace in a tree",
+            "primaryTraces": "A distant roar",
+            "secondaryTraces": "Shed scales"
+        }
+    ],
+    "wetlands": [
         {
             "creature": "Shambling Mound",
             "lair": "A murky marsh pond",
