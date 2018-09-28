@@ -519,7 +519,7 @@ var encounters = {
             "secondaryTraces": "Simple sculpture of a dragon"
         }, 
         {
-            "creature": "1d2 orcs",
+            "creature": "1d4 orcs",
             "lair": "A crude campsite",
             "spoor": "Dead goblins",
             "tracks": "Shoeprints",
@@ -535,7 +535,7 @@ var encounters = {
             "secondaryTraces": "An orc corpse with a chain around its neck and a spear through the head"
         },
         {
-            "creature": "2d2 goblins",
+            "creature": "2d4 goblins",
             "lair": "A small campsite",
             "spoor": "A bled-out deer, hung up in a crude trap",
             "tracks": "Footprints, some with boots, some not",
@@ -585,7 +585,7 @@ var encounters = {
             "secondaryTraces": "A goblin hung by its neck"
         },
         {
-            "creature": "3d3 goblins",
+            "creature": "2d3 goblins and a goblin boss",
             "lair": "A small campsite",
             "spoor": "A bled-out deer, hung up in a crude trap",
             "tracks": "Footprints, some with boots, some not",
@@ -593,7 +593,7 @@ var encounters = {
             "secondaryTraces": "An orc corpse with a chain around its neck and a spear through the head"
         },
         {
-            "creature": "2d2 goblins",
+            "creature": "3d3 goblins",
             "lair": "A small campsite",
             "spoor": "A bled-out deer, hung up in a crude trap",
             "tracks": "Footprints, some with boots, some not",
@@ -635,7 +635,7 @@ var encounters = {
             "secondaryTraces": "Drums in the distance"
         }, 
         {
-            "creature": "1d2 orcs",
+            "creature": "1d4 orcs",
             "lair": "A crude campsite",
             "spoor": "Dead goblins",
             "tracks": "Shoeprints",
@@ -643,7 +643,7 @@ var encounters = {
             "secondaryTraces": "A goblin hung by its neck"
         },
         {
-            "creature": "Dire wolf",
+            "creature": "2d2 dire wolves",
             "lair": "Underground cave",
             "spoor": "A party of orcs torn apart",
             "tracks": "Gigantic paw marks",
@@ -651,7 +651,7 @@ var encounters = {
             "secondaryTraces": "Tufts of hair"
         },
         {
-            "creature": "2d4 winged kobolds",
+            "creature": "2d6 winged kobolds",
             "lair": "A small shelter built against a rock",
             "spoor": "A deer killed by falling rocks",
             "tracks": "A few tiny footprints that don't go anywhere",
